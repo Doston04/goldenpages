@@ -1,0 +1,26 @@
+{
+	"exhibitions": [
+		{
+			"name": "PLASTEX UZBEKISTAN 2021",
+			"description": "11-я Международная выставка «Индустрия пластмасс»",
+			"location": "г. Ташкент Узэкспоцентр",
+			"date": "8-10 Сентября 2021 г.",
+			"organizators": {
+				"phoneNumber": "+998 71-205-18-18",
+				"faks": "+998 71-237-22-72",
+				"email": "post@iteca.uz"
+			}
+		},
+		{
+			"name": "National Developers Community 2022",
+			"description": "13-я Международная выставка «Индустрия пластмасс»",
+			"location": "г. Ташкент Узэкспоцентр",
+			"date": "21-30 Сентября 2022 г.",
+			"organizators": {
+				"phoneNumber": "+998 71-205-18-18",
+				"faks": "+998 71-237-22-72",
+				"email": "info@ndc.uz"
+			}
+		}
+	]
+}
