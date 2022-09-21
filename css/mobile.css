@@ -1,0 +1,69 @@
+
+.table__row5, .pageNavigation {
+  display: none;
+}
+.miniTable {
+  display: flex;
+}
+.titlesDiv {
+  margin-top: 25px;
+  gap: 15px;
+}
+.titles__main {
+  font-size: 22px;
+  line-height: 30px;
+}
+.secondary__main {
+  font-size: 18px;
+  line-height: 27px;
+}
+.secondary__desc, .info__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.infoContainer {
+  gap: 15px;
+}
+.info__date {
+  font-size: 14px;
+  line-height: 16px;
+}
+.otherLinksContainer {
+  margin-top: 30px;
+  gap: 15px;
+}
+.linksContainer__list {
+  gap: 10px;
+}
+.linksContainer__title {
+  font-size: 16px;
+  line-height: 20px;
+}
+.linksContainer__element {
+  font-size: 14px;
+  line-height: 24px;
+}
+#name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--blue);
+}
+#nameDesc {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.titles__main {
+  font-size: 20px;
+  line-height: 30px;
+}
+.secondary__main {
+  font-size: 16px;
+  line-height: 24px;
+}
+.miniElement__logoDiv {
+  height: 140px;
+}
