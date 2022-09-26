@@ -1,0 +1,167 @@
+.banners-top {
+  border: 1px solid red;
+  height: 102px;
+  margin-bottom: 20px;
+}
+
+.banners-aside {
+  border: 1px solid red;
+  height: 100%;
+}
+
+.breadcrumb li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumb li::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  margin-top: -4px;
+  display: block;
+  transform-origin: 5px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-132deg);
+}
+
+.breadcrumb li {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray);
+  margin-left: 33px;
+}
+
+.breadcrumb .active {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--darker-blue);
+}
+
+.breadcrumb .active::after {
+  display: none;
+}
+
+.clr-blue {
+  color: #192C4A;
+}
+
+.col-over1600-1 {
+  width: 84%;
+  flex: 0 0 84%;
+  padding: 0 10px;
+}
+
+.col-asideR1600-1 {
+  width: 16%;
+  flex: 0 0 16%;
+  padding: 0 10px;
+}
+
+.gp_static p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+/* === TABLES === */
+.gp_exhibitions_table {
+  margin-top: 30px;
+}
+
+.tablesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHead {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.exhibitionTableRow {
+  display: grid;
+  grid-template-columns: .8fr .8fr .6fr .6fr 1.2fr;
+  overflow: hidden;
+}
+
+.exhibitionLogo {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.exhibitionLogo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lastExhibitionTable { 
+  background-color: var(--table-head);
+  width: 100%;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+/* ============================ */
+
+.update_time {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.desc_bigger {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin-top: 28px;
+}
+
+.column-td {
+  display: flex;
+  flex-direction: column;
+}
+
+table p {
+  margin: 0;
+}
+
+.column-td a {
+  color: var(--blue);
+}
+
+@media (max-width: 1200px) {
+  .h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .desc_bigger {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .update_time {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}

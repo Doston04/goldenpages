@@ -244,8 +244,16 @@ tbody tr:nth-child(2n) {
   }
 }
 
+.miniContainer {
+  display: none;
+}
+
 @media (max-width: 992px) {
+  .container {
+    display: none;
+  }
   .miniContainer {
+    display: block;
     padding-inline: 20px;
   }
   .headerTitle .h1 {
