@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+  .mainMiniContainer {
+    margin-top: 25px;
+    overflow-x: scroll;
+  }
+  .first-aid-tableRow th {
+    padding: 15px;
+  }
+  .first-aid-tableRow {
+    display: grid;
+    grid-template-columns: .7fr 1fr 1fr;
+  } 
+  .first-aid-tableRow th:first-child, .first-aid-tableRow td:first-child {
+    min-width: 204px;
+    width: 100%;
+  } 
+  .first-aid-tableRow th:nth-child(2) , .first-aid-tableRow td:nth-child(2), .first-aid-tableRow th:nth-child(3) , .first-aid-tableRow td:nth-child(3) {
+    min-width: 230px;
+    width: 100%;
+  }
+}

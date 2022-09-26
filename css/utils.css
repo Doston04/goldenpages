@@ -14,14 +14,84 @@
   --evenly-bg: #F8F8FB;
 }
 
+/* === Banners === */
+.banners-top {
+  border: 1px solid red;
+  height: 102px;
+  margin-bottom: 20px;
+}
+
+.banners-aside {
+  border: 1px solid red;
+  height: 100%;
+}
+/* =============== */
+
+.breadcrumb li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumb li::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  margin-top: -4px;
+  display: block;
+  transform-origin: 5px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-132deg);
+}
+
+.breadcrumb li {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray);
+  margin-left: 33px;
+}
+
+.breadcrumb .active {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--darker-blue);
+}
+
+.breadcrumb .active::after {
+  display: none;
+}
+
+.col-over1600-1 {
+  width: 84%;
+  flex: 0 0 84%;
+  padding: 0 10px;
+}
+
+.col-asideR1600-1 {
+  width: 16%;
+  flex: 0 0 16%;
+  padding: 0 10px;
+}
+
+.clr-blue {
+  color: #192C4A;
+}
+
 .indexWrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .indexWrapper a {
   width: fit-content;
 }
+
 .indexWrapper a:hover {
   color: var(--blue);
 }
@@ -51,6 +121,12 @@ tbody tr:nth-child(2n) {
 
 .mt-27 {
   margin-top: 27px;
+}
+
+.tableHead {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  background-color: var(--table-head);
 }
 
 .th {
@@ -88,6 +164,12 @@ tbody tr:nth-child(2n) {
   font-size: 16px;
   line-height: 20px;
   color: var(--black);
+}
+
+.left-td {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .arrowLink {
@@ -196,7 +278,6 @@ tbody tr:nth-child(2n) {
 
 .otherLinksDiv {
   margin-top: 55px;
-  margin-bottom: 80px;
 }
 
 .otherLinks {
@@ -244,8 +325,44 @@ tbody tr:nth-child(2n) {
   }
 }
 
+.tableDescDiv {
+  margin-top: 30px;
+}
+
+.container {
+  display: block;
+  padding-bottom: 80px;
+}
+
 .miniContainer {
   display: none;
+}
+
+.update_time {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.desc_bigger {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin-top: 28px;
+}
+
+.column-td {
+  display: flex;
+  flex-direction: column;
+}
+
+table p {
+  margin: 0;
+}
+
+.column-td a {
+  color: var(--blue);
 }
 
 @media (max-width: 992px) {
@@ -254,7 +371,7 @@ tbody tr:nth-child(2n) {
   }
   .miniContainer {
     display: block;
-    padding-inline: 20px;
+    padding: 0 20px 30px 20px;
   }
   .headerTitle .h1 {
     font-size: 22px;
