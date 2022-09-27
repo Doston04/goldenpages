@@ -1,0 +1,129 @@
+.oldcar-desc .desc_p {
+  line-height: 24px;
+}
+
+.numberHistoryDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.numberDiv {
+  background-color: var(--evenly-bg);
+  padding: 20px 120px 25px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  border: 1px solid #ECECEC;
+}
+
+.numberInfo {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.numberContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkmark {
+  max-width: 24px;
+  width: 100%;
+  max-height: 24px;
+  height: 100%;
+}
+
+.numberImg {
+  position: relative;
+  max-width: 270px;
+  width: 100%;
+  height: 70px;
+}
+
+.numberImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bottom_span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.bottom_span:hover {
+  text-decoration: underline;
+}
+
+.oldcarTable {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.oldcarTableRow {
+  display: grid;
+  grid-template-columns: 1.2fr .6fr .5fr .5fr .6fr 1fr;
+}
+
+.row-td {
+  display: grid;
+  grid-template-columns: .4fr .6fr;
+  width: 100%;
+  border-top: 1px solid var(--border);
+  height: 100%;
+}
+
+.td-row {
+  border-top: none !important;
+}
+
+.row-td .th {
+  border-right: 1px solid var(--border) !important;
+}
+
+.row-td .th:last-child, .row-td .td:last-child {
+  border-right: none !important;
+}
+
+.mini-th {
+  border-right: 1px solid var(--border);
+  padding: 0;
+}
+
+.mini-th .th {
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .numberDiv {
+    padding: 20px 25px;
+  }
+  .numberInfo {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .checkmark {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .numberImg {
+    max-width: 200px;
+  }
+  .oldcarTableRow {
+    grid-template-columns: 1fr .6fr .5fr .5fr .6fr 1fr;
+  }
+}

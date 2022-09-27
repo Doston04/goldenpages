@@ -5,6 +5,10 @@
 }
 
 /* === TABLES === */
+#newTable {
+  margin-bottom: 0;
+}
+
 .gp_exhibitions_table {
   margin-top: 30px;
 }
@@ -16,7 +20,7 @@
 
 .exhibitionTableRow {
   display: grid;
-  grid-template-columns: .8fr .9fr .6fr .6fr 1fr;
+  grid-template-columns: .6fr .8fr .6fr .6fr 1.2fr;
   overflow: hidden;
 }
 
