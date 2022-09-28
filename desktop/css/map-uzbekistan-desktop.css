@@ -1,0 +1,48 @@
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerContent p {
+  text-align: center;
+}
+
+.centerContent .span-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mapDiv {
+  padding: 20px 0;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1800px) {
+  .map {
+    height: 500px;
+  }
+  .mapDiv {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .map {
+    height: 380px;
+  }
+}

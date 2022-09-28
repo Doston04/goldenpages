@@ -1,0 +1,28 @@
+@media (max-width: 992px) {
+	.textDiv {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.textDiv .h5, .textDiv .desc_p {
+		margin: 0;
+	}
+	.textDiv .desc_p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.textDiv:first-child {
+		margin-top: 15px;
+	}
+	.textDiv {
+		margin-top: 25px;
+	}
+	.span-link {
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: 500;
+	}
+	.span-link:hover {
+		text-decoration: underline;
+	}
+}

@@ -91,6 +91,17 @@
   width: fit-content;
 }
 
+.light-blue {
+  color: var(--blue);
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
 .indexWrapper a:hover {
   color: var(--blue);
 }
@@ -238,53 +249,16 @@ tbody tr:nth-child(2n) {
   color: var(--dark-blue);
 }
 
-.otherLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.otherLinksDiv {
+  margin-top: 55px;
 }
 
-.otherLinkMini {
-  margin: 0;
-}
-
-.otherLinkMini a {
-  font-size: 14px;
-  line-height: 24px;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--blue);   
-}
-
-.otherLinkMini a {
+.otherLink {
   font-size: 14px;
   line-height: 24px;
   color: var(--blue);
   position: relative;
-}
-
-.otherLinkMini a::before {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: -15px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--orange);
-}
-
-.otherLinkMini a:hover {
-  text-decoration: underline;
-}
-
-.h4 {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.otherLinksDiv {
-  margin-top: 55px;
+  margin: 0;
 }
 
 .otherLinks {
@@ -296,8 +270,13 @@ tbody tr:nth-child(2n) {
   margin-top: 20px;
 }
 
+.h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .otherLink {
-    margin: 0;
+  margin: 0;
 }
 
 .otherLink a {
@@ -320,16 +299,6 @@ tbody tr:nth-child(2n) {
 
 .otherLink a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 1200px) {
-  .otherLinksDiv {
-    margin-top: 30px;
-  }
-  .otherLinks {
-    gap: 10px;
-    margin-top: 10px;
-  }
 }
 
 .tableDescDiv {
@@ -372,6 +341,16 @@ table p {
   color: var(--blue);
 }
 
+@media (max-width: 1200px) {
+  .otherLinksDiv {
+    margin-top: 30px;
+  }
+  .otherLinks {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 992px) {
   .container {
     display: none;
@@ -400,5 +379,9 @@ table p {
   .h2 {
     font-size: 16px;
     line-height: 20px;
+  }
+  .otherLink a {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

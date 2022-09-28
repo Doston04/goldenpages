@@ -1,0 +1,22 @@
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerContent .h3 {
+	margin: 0;
+}
+
+.centerContent p {
+  text-align: center;
+}
+
+.centerContent .span-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mainMiniContainer {
+	margin-top: 15px;
+}
