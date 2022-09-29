@@ -15,34 +15,83 @@
 
 .mapDiv {
   padding: 20px 0;
+  position: relative;
+}
+
+.mapInfo {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+.mapInfo__content {
+  background-color: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mapInfo__content p {
+  margin: 0;
+}
+
+.infoDiv {
+  display: flex;
+  gap: 4px;
+}
+
+.info__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.info__info {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .map {
-  position: relative;
+  height: 700px;
   width: 100%;
-  height: 800px;
 }
 
-.map img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.region {
+  color: #A7BADF;
+  transition: .3s;
+}
+
+.region.active {
+  color: #264277;
+  transition: .3s;
+}
+
+.region:hover {
+  cursor: pointer;
+  color: #264277;
 }
 
 @media (max-width: 1800px) {
-  .map {
-    height: 500px;
-  }
   .mapDiv {
     padding: 12px 0;
+  }
+  .map {
+    height: 540px;
   }
 }
 
 @media (max-width: 1200px) {
   .map {
-    height: 380px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 360px;
   }
 }

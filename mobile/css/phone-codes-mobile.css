@@ -1,0 +1,40 @@
+@media (max-width: 992px) {
+  .tablesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .phoneCodeTableRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tableElement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tableTitleRegion {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--dark-blue);
+    margin: 0;
+  }
+  .extraDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .desc_p, .h3 {
+    margin: 0;
+  }
+  .minih2 {
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+  }
+}

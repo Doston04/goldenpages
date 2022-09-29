@@ -25,6 +25,7 @@
   max-width: 200px !important;
   width: 100%;
   border: 1px solid red;
+  overflow: hidden
 }
 /* =============== */
 
@@ -243,14 +244,15 @@ tbody tr:nth-child(2n) {
 }
 
 .h2 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: var(--dark-blue);
+  margin: 0;
 }
 
 .otherLinksDiv {
-  margin-top: 55px;
+  margin-top: 50px;
 }
 
 .otherLink {
@@ -341,9 +343,13 @@ table p {
   color: var(--blue);
 }
 
+.red {
+  color: var(--red);
+}
+
 @media (max-width: 1200px) {
   .otherLinksDiv {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .otherLinks {
     gap: 10px;
@@ -353,19 +359,23 @@ table p {
 
 @media (max-width: 992px) {
   .container {
-    display: none;
+    overflow-x: scroll;
+  }
+  .mainContainer {
+    flex-direction: column;
+    gap: 12px;
   }
   .miniContainer {
     display: block;
     padding: 0 20px 30px 20px;
   }
-  .headerTitle .h1 {
+  .h1 {
     font-size: 22px;
     line-height: 30.8px;
     font-weight: 500;
-    margin: 0;
+    margin: 12px 0;
   }
-  .headerTitle .h3 {
+  .h3 {
     margin-top: 15px;
     font-size: 18px;
     line-height: 27px;

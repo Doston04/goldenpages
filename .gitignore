@@ -1,2 +1,7 @@
 text.txt
-media/
+media/svg/
+map-uzbekistan-desktop.html
+map-uzbekistan-mobile.html
+map-uzbekistan-desktop.css
+map-uzbekistan-mobile.css
+data.json

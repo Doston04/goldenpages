@@ -1,0 +1,24 @@
+.extraDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.minih2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.tablesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.phoneCodeTableRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

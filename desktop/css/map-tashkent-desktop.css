@@ -1,0 +1,98 @@
+.h3, .flex_block p {
+  margin: 0;
+}
+
+.map iframe {
+  width: 100% !important;
+  height: 600px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.blockContent {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_block {
+  background-color: var(--evenly-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  border: 1px solid var(--border);
+}
+
+.desc_p {
+  margin: 0;
+}
+
+.bold_text {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.otherBlock {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #D6D6D6;
+  gap: 10px;
+}
+
+.regionDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.region_text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--black);
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1800px) {
+  .map iframe {
+    height: 480px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .map iframe {
+    height: 480px !important;
+  }
+  .square {
+    padding: 8px 0;
+  }
+  .otherBlock {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map iframe {
+    height: 320px !important;
+  }
+}
