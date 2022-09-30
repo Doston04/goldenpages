@@ -1,0 +1,117 @@
+@media (max-width: 992px) {
+  .h1 {
+    margin: 0;
+  }
+  .istochnikDiv {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 13px;
+  }
+  .istochnikDiv .desc_p {
+    margin: 0;
+  }
+  .istochnikDiv .desc_p a {
+    color: var(--blue);
+  }
+  .istochnikDiv .desc_p a:hover, .td a:hover {
+    text-decoration: underline;
+  }
+  .mainMiniContainer {
+    margin-top: 20px;
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+  }
+  .infoGridDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .arrowDown {
+    width: 16px;
+    height: 16px;
+    color: var(--dark-blue);
+    margin-top: 4px;
+    transition: .3s;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .accordion-item {
+    background-color: #F8F8FB !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    border: none !important;
+  }
+  .accordion-header {
+    border: none !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #F8F8FB;
+    box-shadow: none !important;
+  }
+  .accordion-button {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 15px !important;
+    border: 1px solid  !important;
+    background-color: #F8F8FB !important;
+  }
+  .accordion-button:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+  .accordion-button::after {
+    display: none !important;
+  }
+  .accordion-button .arrowDown {
+    transform: rotate(180deg);
+  }
+  .accordion-button.collapsed .arrowDown {
+    transform: rotate(0deg);
+    transition: .3s;
+  }
+  .accordion-button.collapsed {
+    border: none !important;
+  }
+  .btn_text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: var(--dark-blue);
+    width: 100%;
+  }
+  .accordion-body {
+    padding: 0 15px 15px 15px;
+  }
+  .infoDiv:first-child {
+    margin-top: 0px;
+  }
+  .infoDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  .keySpan {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: var(--dark-blue);
+  }
+  .valueSpan, .infoDiv a {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black);
+  }
+  .infoDiv a {
+    color: var(--blue);
+  }
+}

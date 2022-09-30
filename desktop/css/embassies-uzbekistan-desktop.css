@@ -1,0 +1,39 @@
+.embassiesTableRow {
+  display: grid;
+  grid-template-columns: 2fr 11fr 5fr 6fr 5fr 8fr 8fr 11fr;
+}
+
+.istochnikDiv {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 13px;
+}
+
+.istochnikDiv .desc_p {
+  margin: 0;
+}
+
+.istochnikDiv .desc_p a {
+  color: var(--blue);
+}
+
+.istochnikDiv .desc_p a:hover, .td a:hover {
+  text-decoration: underline;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+@media (max-width: 1400px) {
+  .embassiesTable {
+    min-width: 1080px;
+    overflow-x: scroll;
+  }
+  .mainContent {
+    overflow: hidden;
+  }
+  .mainTable {
+    overflow-x: scroll;
+  }
+}

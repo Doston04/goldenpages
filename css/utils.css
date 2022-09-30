@@ -126,8 +126,22 @@ tbody tr:nth-child(2n) {
   background-color: var(--evenly-bg);
 }
 
+.row-td {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-25 {
@@ -140,6 +154,10 @@ tbody tr:nth-child(2n) {
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.blue {
+  color: var(--blue);
 }
 
 .tableHead {
@@ -347,6 +365,18 @@ table p {
   color: var(--red);
 }
 
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
 @media (max-width: 1200px) {
   .otherLinksDiv {
     margin-top: 20px;
@@ -382,7 +412,6 @@ table p {
     letter-spacing: 0.4px;
   }
   .desc_p {
-    margin-top: 8px;
     font-size: 14px;
     line-height: 20px;
   }

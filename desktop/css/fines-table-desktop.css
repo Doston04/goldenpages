@@ -1,0 +1,92 @@
+.row-td .des_p, .h3 {
+  margin: 0;
+}
+
+.desc_p.blue {
+  color: var(--blue);
+}
+
+.bottomText {
+  margin-top: 50px;
+}
+
+.textDiv {
+  padding-left: 15px;
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.textDiv_text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.textDiv_text::marker {
+  color: var(--orange);
+}
+
+.link {
+  color: var(--blue);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.table1 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.table1TableRow {
+  display: grid;
+  grid-template-columns: 1fr .35fr .3fr .2fr;
+}
+
+.bold_p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.colTableDiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.grid2TableRow {
+  display: grid;
+  grid-template-columns: .75fr .25fr;
+}
+
+@media (max-width: 1200px) {
+  .table1TableRow {
+    display: grid;
+    grid-template-columns: .6fr .35fr .3fr .2fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTable {
+    overflow-x: scroll;
+  }
+  .table1 {
+    min-width: 990px;
+    overflow-x: scroll;
+  }
+  .tableGrid {
+    min-width: 680px;
+    overflow-x: scroll;
+  }
+  .grid2TableRow {
+    display: grid;
+    grid-template-columns: .6fr .4fr;
+  }
+}

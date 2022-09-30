@@ -17,10 +17,6 @@
   margin-top: 20px;
 }
 
-.mainBlock {
-  margin-top: 30px;
-}
-
 .tableRow {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr 1fr;
@@ -60,4 +56,11 @@
   width: 100%;
   border-bottom: 1px solid var(--border);
   padding: 5px;
+}
+
+@media (max-width: 780px) {
+  .postalCodesTable {
+    min-width: 680px;
+    overflow-x: scroll;
+  }
 }
