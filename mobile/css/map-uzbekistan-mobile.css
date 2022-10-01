@@ -20,3 +20,13 @@
 .mainMiniContainer {
 	margin-top: 15px;
 }
+
+.map {
+  padding: 16px 0;
+  height: auto;
+  width: 100%;
+}
+
+.region {
+  color: var(--dark-blue);
+}

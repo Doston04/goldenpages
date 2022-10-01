@@ -96,13 +96,6 @@
   color: var(--blue);
 }
 
-.h5 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: var(--dark-blue);
-}
-
 .indexWrapper a:hover {
   color: var(--blue);
 }
@@ -132,28 +125,36 @@ tbody tr:nth-child(2n) {
   gap: 4px;
 }
 
+.gap-4 {
+  gap: 4px !important;
+}
+
 .gap-8 {
-  gap: 8px;
+  gap: 8px !important;
+}
+
+.gap-12 {
+  gap: 12px !important;
 }
 
 .mt-15 {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 
 .mt-20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .mt-25 {
-  margin-top: 25px;
+  margin-top: 25px !important;
 }
 
 .mt-27 {
-  margin-top: 27px;
+  margin-top: 27px !important;
 }
 
 .mt-30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 
 .blue {
@@ -238,35 +239,47 @@ tbody tr:nth-child(2n) {
 }
 
 .desc_p {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--black);  
-  margin: 0;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: var(--black) !important;   
+  margin: 0 !important;
 }
 
 .h1 {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  margin-top: 15px;
-  margin-bottom: 21px;
-}
-
-.h3 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  margin-top: 9px;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+  margin-top: 15px !important;
+  margin-bottom: 21px !important;
 }
 
 .h2 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+  margin: 0 !important;
+}
+
+.h3 {
+  font-size: 20px !important;
+  line-height: 30px !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+  margin: 0 !important;
+}
+
+.h4 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 500;
   color: var(--dark-blue);
-  margin: 0;
 }
 
 .otherLinksDiv {
@@ -288,11 +301,6 @@ tbody tr:nth-child(2n) {
   list-style-type: none;
   margin-left: 16px;
   margin-top: 20px;
-}
-
-.h4 {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .otherLink {
@@ -322,12 +330,12 @@ tbody tr:nth-child(2n) {
 }
 
 .tableDescDiv {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 
 .container {
   display: block;
-  padding-bottom: 80px;
+  padding-bottom: 80px !important;
 }
 
 .miniContainer {
@@ -335,16 +343,16 @@ tbody tr:nth-child(2n) {
 }
 
 .update_time {
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--gray);
-  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  color: var(--gray) !important;
+  font-weight: 500 !important;
 }
 
 .desc_bigger {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--black);
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: var(--black) !important;
   margin-top: 28px;
 }
 
@@ -362,19 +370,19 @@ table p {
 }
 
 .red {
-  color: var(--red);
+  color: var(--red) !important;
 }
 
 .pt-15 {
-  padding-top: 15px;
+  padding-top: 15px !important;
 }
 
 .pt-20 {
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 
 .pt-30 {
-  padding-top: 30px;
+  padding-top: 30px !important;
 }
 
 @media (max-width: 1200px) {
@@ -407,9 +415,8 @@ table p {
   }
   .h3 {
     margin-top: 15px;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.4px;
+    font-size: 18px !important;
+    line-height: 27px !important;
   }
   .desc_p {
     font-size: 14px;
