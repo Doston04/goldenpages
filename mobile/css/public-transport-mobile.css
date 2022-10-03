@@ -1,85 +1,83 @@
-@media (max-width: 992px) {
-  .h1 {
-    margin: 0;
-  }
-  .h5 { 
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    margin: 0;
-  }
-  .desc_p, .textDivUl .desc_p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .otherLinksDiv, .otherLinks {
-    margin-top: 0;
-  }
-  .mainBlock {
-    margin-top: 40px;
-  }
-  .textDiv {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-  }
-  .textDivMini {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-  .textDivUl {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    padding-left: 16px !important;
-  }
-  .textDivUl li {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    color: var(--black);
-  }
-  .textDivUl li::marker {
-    color: var(--orange);
-  }
-  .fl::first-letter {
-    padding-left: 16px;
-  }
-  .centeredBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .imagesBlock {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
-    width: 100%;
-  }
-  #tarifi {
-    position: relative;
-    width: 100%;
-    height: 230px;
-    background-color: #fff;
-  }
-  #etapi {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: #fff;
-  }
-  .atto-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .mainBlock {
-    margin-top: 15px;
-  }
+.h1 {
+  margin: 0 !important;
+}
+.h5 { 
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+.desc_p, .textDivUl .desc_p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.otherLinksDiv, .otherLinks {
+  margin-top: 0;
+}
+.mainBlock {
+  margin-top: 40px;
+}
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.textDivMini {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.textDivUl {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-left: 16px !important;
+}
+.textDivUl li {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+.textDivUl li::marker {
+  color: var(--orange);
+}
+.fl::first-letter {
+  padding-left: 16px;
+}
+.centeredBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  width: 100%;
+}
+#tarifi {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-color: #fff;
+}
+#etapi {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+}
+.atto-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mainBlock {
+  margin-top: 15px;
 }

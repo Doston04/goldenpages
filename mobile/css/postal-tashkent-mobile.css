@@ -1,67 +1,65 @@
-@media (max-width: 992px) {
-  .update_time, .h1 {
-    margin: 0;
-  }
-  .h6 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    color: var(--dark-blue);
-    margin: 0;
-  }
-  .extraDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .extraDiv .desc_p {
-    margin: 0;
-  }
-  .mainBlock {
-    margin-top: 30px;
-  }
-  .tableRow {
-    display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr;
-  }
-  .grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: 100%;
-  }
-  .gridTh {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--border);
-    text-align: center;
-    height: 100%;
-    padding: 4px;
-  }
-  .gridTh:last-child {
-    border-right: none;
-  }
-  .th:last-child, .td:last-child {
-    padding: 0;
-  }
-  .td .gridTh {
-    padding: 10px;
-  }
-  .topTh {
-    width: 100%;
-    border-bottom: 1px solid var(--border);
-    padding: 5px;
-  }
-  .mainMiniContainer {
-    overflow-x: scroll;
-  }
-  .table {
-    min-width: 680px;
-  }
-  .tableDescDiv {
-    margin-top: 15px;
-  }
+.update_time, .h1 {
+  margin: 0;
+}
+.h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin: 0;
+}
+.extraDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.extraDiv .desc_p {
+  margin: 0;
+}
+.mainBlock {
+  margin-top: 30px;
+}
+.tableRow {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.gridTh {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border);
+  text-align: center;
+  height: 100%;
+  padding: 4px;
+}
+.gridTh:last-child {
+  border-right: none;
+}
+.th:last-child, .td:last-child {
+  padding: 0;
+}
+.td .gridTh {
+  padding: 10px;
+}
+.topTh {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  padding: 5px;
+}
+.mainMiniContainer {
+  overflow-x: scroll;
+}
+.table {
+  min-width: 680px;
+}
+.tableDescDiv {
+  margin-top: 15px;
 }

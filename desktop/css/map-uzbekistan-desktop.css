@@ -94,4 +94,7 @@
   .map {
     height: 360px;
   }
+  .mainContent {
+    overflow-x: scroll;
+  }
 }

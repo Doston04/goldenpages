@@ -79,3 +79,13 @@
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 992px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .mainBlock {
+    min-width: 1200px;
+    overflow-x: scroll;
+  }
+}

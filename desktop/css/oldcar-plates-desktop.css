@@ -126,4 +126,11 @@
   .oldcarTableRow {
     grid-template-columns: 1fr .6fr .5fr .5fr .6fr 1fr;
   }
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .oldcarTable, .numberHistoryDiv {
+    min-width: 850px;
+    overflow-x: scroll;
+  }
 }

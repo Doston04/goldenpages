@@ -22,3 +22,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 992px) {
+  .mainContent, .mainBlock {
+    overflow-x: scroll;
+  }
+  .tablesGrid {
+    min-width: 720px;
+    overflow-x: scroll;
+  }
+}

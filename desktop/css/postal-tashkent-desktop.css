@@ -58,9 +58,12 @@
   padding: 5px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 992px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
   .postalCodesTable {
-    min-width: 680px;
+    min-width: 810px;
     overflow-x: scroll;
   }
 }

@@ -95,4 +95,7 @@
   .map iframe {
     height: 320px !important;
   }
+  .mainContent {
+    overflow-x: scroll;
+  }
 }

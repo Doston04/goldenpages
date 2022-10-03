@@ -1,142 +1,137 @@
-@media (max-width: 992px) {
-  .container {
-    display: none;
-  }
-  .mainMiniContainer {
-    margin-top: 25px;
-  }
-  .update_time {
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 25px;
-  }
-  .exhibitonImage {
-    height: 120px;
-    border-bottom: 1px solid var(--border);
-  }
-  .lastExhibitons {
-    margin-top: 40px;
-    text-align: center;
-  }
-  .accordion {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 15px !important;
-  }
-  .accordion-item {
-    border-radius: 10px !important;
-    border: 1px solid var(--table-head) !important;
-    overflow: hidden;
-  }
-  .accordion-item, .accordion-button {
-    background-color: #F8F8FB;
-  }
-  .exhibitonImage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .exhibitionMiniImage {
-    position: relative;
-    max-width: 150px;
-    margin: 0 auto;
-    width: 100%;
-    height: 102px;
-    overflow: hidden;
-  }
-  .exhibitionMiniImage img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .buttonContent {
-    display: flex;
-    flex-direction: column;
-  }
-  .buttonContent p {
-    margin: 0;
-  }
-  .accordion-button .arrowDown {
-    transform: rotate(180deg);
-  }
-  .accordion-button.collapsed .arrowDown {
-    transform: rotate(0deg);
-    transition: .3s;
-  }
-  .accordion-button {
-    padding: 15px !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: flex-end !important;
-    gap: 16px !important;
-  }
-  .accordion-button::after {
-    display: none;
-  }
-  .accordion-svg {
-    margin-bottom: 5px;
-  }
-  .arrowDown {
-    width: 24px;
-    height: 24px;
-    color: var(--dark-blue);
-    transition: .3s;
-  }
-  .exhibiton_time {
-    background-color: var(--orange);
-    padding: 3px 7px;
-    border-radius: 10px;
-    overflow: hidden;
-    color: #fff;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.4px;
-    font-weight: 700;
-    width: fit-content;
-  }
-  .exhibiton_name {
-    font-size: 16px !important;
-    line-height: 24px !important;
-    letter-spacing: .4px !important;
-    font-weight: 500 !important;
-    color: var(--dark-blue) !important;
-    margin-top: 15px !important;
-  }
-  .exhibiton_desc {
-    font-size: 14px !important;
-    line-height: 21px !important;
-    color: var(--black);
-    font-weight: 500 !important;
-    letter-spacing: .4px;
-    margin-top: 8px !important;
-  }
-  .accordion-body {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-    padding: 0 15px 15px 15px !important;
-  }
-  .keyValueDiv {
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.4px;
-    font-weight: 500;
-  }
-  .exhKey {
-    color: var(--dark-blue);
-  }
-  .exhValue {
-    color: var(--black);
-  }
-  .accordion-button:not(.collapsed) {
-    color: red !important;
-    background: none !important;
-    box-shadow: none !important;
-  }
-  .accordion-button:focus {
-    box-shadow: none !important;
-  }
+.mainMiniContainer {
+  margin-top: 25px;
+}
+.update_time {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 25px;
+}
+.exhibitonImage {
+  height: 120px;
+  border-bottom: 1px solid var(--border);
+}
+.lastExhibitons {
+  margin-top: 40px;
+  text-align: center;
+}
+.accordion {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+}
+.accordion-item {
+  border-radius: 10px !important;
+  border: 1px solid var(--table-head) !important;
+  overflow: hidden;
+}
+.accordion-item, .accordion-button {
+  background-color: #F8F8FB;
+}
+.exhibitonImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exhibitionMiniImage {
+  position: relative;
+  max-width: 150px;
+  margin: 0 auto;
+  width: 100%;
+  height: 102px;
+  overflow: hidden;
+}
+.exhibitionMiniImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.buttonContent {
+  display: flex;
+  flex-direction: column;
+}
+.buttonContent p {
+  margin: 0;
+}
+.accordion-button .arrowDown {
+  transform: rotate(180deg);
+}
+.accordion-button.collapsed .arrowDown {
+  transform: rotate(0deg);
+  transition: .3s;
+}
+.accordion-button {
+  padding: 15px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  gap: 16px !important;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-svg {
+  margin-bottom: 5px;
+}
+.arrowDown {
+  width: 24px;
+  height: 24px;
+  color: var(--dark-blue);
+  transition: .3s;
+}
+.exhibiton_time {
+  background-color: var(--orange);
+  padding: 3px 7px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  width: fit-content;
+}
+.exhibiton_name {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: .4px !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+  margin-top: 15px !important;
+}
+.exhibiton_desc {
+  font-size: 14px !important;
+  line-height: 21px !important;
+  color: var(--black);
+  font-weight: 500 !important;
+  letter-spacing: .4px;
+  margin-top: 8px !important;
+}
+.accordion-body {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  padding: 0 15px 15px 15px !important;
+}
+.keyValueDiv {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+}
+.exhKey {
+  color: var(--dark-blue);
+}
+.exhValue {
+  color: var(--black);
+}
+.accordion-button:not(.collapsed) {
+  color: red !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
 }

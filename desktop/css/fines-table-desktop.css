@@ -73,20 +73,12 @@
   }
 }
 
-@media (max-width: 768px) {
-  .mainTable {
+@media (max-width: 992px) {
+  .mainContent {
     overflow-x: scroll;
   }
-  .table1 {
-    min-width: 990px;
+  .table1TableRow, .tableGrid {
+    min-width: 760px;
     overflow-x: scroll;
-  }
-  .tableGrid {
-    min-width: 680px;
-    overflow-x: scroll;
-  }
-  .grid2TableRow {
-    display: grid;
-    grid-template-columns: .6fr .4fr;
   }
 }
