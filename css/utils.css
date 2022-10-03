@@ -16,7 +16,6 @@
 
 /* === Banners === */
 .banners-top {
-  border: 1px solid red;
   height: 102px;
   margin-bottom: 20px;
 }
@@ -24,7 +23,6 @@
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  border: 1px solid red;
   overflow: hidden
 }
 /* =============== */
