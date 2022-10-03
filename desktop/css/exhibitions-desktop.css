@@ -6,7 +6,12 @@
 
 /* === TABLES === */
 #newTable {
-  margin-bottom: 0;
+  margin: 25px 0 0 0;
+}
+
+.new_gp_exhibitons_table {
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
 }
 
 .gp_exhibitions_table:first-child {

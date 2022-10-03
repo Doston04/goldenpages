@@ -1,0 +1,102 @@
+.barcodeContainer {
+  background-color: var(--evenly-bg);
+  padding: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.barcodeTitleDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+}
+
+.bold-text {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.barcodeImageDiv {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+}
+
+.barcodeImageDiv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.no_header_table {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.no_header_tableRow {
+  display: grid;
+  grid-template-columns: 5% 60% 35%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.no_header_tableRow .td:last-child {
+  align-items: center !important;
+  justify-content: flex-end !important;
+  text-align: end !important;
+}
+
+.barcodesTable {
+  margin-top: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.barcodeTableRow {
+  display: grid;
+  grid-template-columns: 15% 25% 60%;  
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .barcodeImageDiv {
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .no_header_table, .barcodesTable, .barcodeContainer {
+    min-width: 760px;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .barcodeContainer {
+    gap: 10px;
+  }
+  .barcodeImageDiv {
+    height: 200px;
+  }
+}

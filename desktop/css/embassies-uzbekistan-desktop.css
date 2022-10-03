@@ -1,7 +1,6 @@
 .embassiesTableRow {
   display: grid;
-  /* grid-template-columns: 4fr 12fr 8fr 8fr 8fr 10fr 10fr 10fr; */
-  grid-template-columns: 10% 25% 10% 10% 10% 10% 10% 25%;
+  grid-template-columns: 4% 18% 7% 10% 8% 15% 15% 23%;
 }
 
 .istochnikDiv {
@@ -26,9 +25,9 @@
   gap: 8px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .embassiesTable {
-    min-width: 1200px;
+    min-width: 1400px;
     overflow-x: scroll;
   }
   .mainContent {

@@ -109,8 +109,8 @@
 }
 
 a {
-  text-decoration: none;
-  color: currentColor;
+  text-decoration: none !important;
+  color: currentColor !important;
 }
 
 table, tr, th, td {
@@ -119,8 +119,12 @@ table, tr, th, td {
   border-style: none;
 }
 
+tbody {
+  border-top: 1px solid var(--border) !important;
+}
+
 tbody tr:nth-child(2n) {
-  background-color: var(--evenly-bg);
+  background-color: var(--evenly-bg) !important;
 }
 
 .row-td {
@@ -139,6 +143,14 @@ tbody tr:nth-child(2n) {
 
 .gap-12 {
   gap: 12px !important;
+}
+
+.gap-16 {
+  gap: 16px !important;
+}
+
+.gap-20 {
+  gap: 20px !important;
 }
 
 .mt-15 {
@@ -280,10 +292,11 @@ tbody tr:nth-child(2n) {
 }
 
 .h5 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: var(--dark-blue);
+  font-size: 18px !important;
+  line-height: 27px !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+  margin: 0 !important;
 }
 
 .otherLinksDiv {
@@ -363,6 +376,12 @@ table p {
 
 .column-td a {
   color: var(--blue);
+  text-decoration: none !important;
+}
+
+.column-td a:hover {
+  color: var(--blue);
+  text-decoration: underline !important;
 }
 
 .red {

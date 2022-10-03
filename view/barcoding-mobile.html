@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Штриховое кодирование: как читать штрих-код</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/utils.css">
+  <link rel="stylesheet" href="/mobile/css/barcodes-mobile.css">
+</head>
+<body>
+  <main class="b-container-mini mt-25">
+    <div class="miniContainer">
+      <div class="headerTitle">
+        <h1 class="h1">Штриховое кодирование: как читать штрих-код</h1>
+      </div>
+      <!-- === Main content starts here! === -->
+      <div class="mainMiniContainer">
+        <div class="column-td gap-20 mt-15">
+          <p class="desc_p">Штриховое кодирование на международном уровне внедряется и осуществляется Международной Ассоциацией “ GS 1” ( EAN International , Бельгия).</p>
+          <p class="desc_p">Международная Ассоциация “GS 1” ( EAN International ) – это добровольная некоммерческая международная организация, состоящая из Национальных организаций представляющих международную Систему GS 1 ( EAN • UCC ) в 104 странах мира.</p>
+          <p class="desc_p">Международная Ассоциация “GS 1” управляет всемирной многоотраслевой системой стандартов GS 1 ( EAN • UCC ) для автоматической идентификации, товарной нумерации и штрихового кодирования, позволяющей идентифицировать и передавать данные о товарах, услугах, предприятиях, транспортных единиц и др.</p>
+          <p class="desc_p">Внедрение Системы GS 1 ( EAN • UCC ) в том числе штрихового кодирования на национальных или региональных уровнях осуществляется Организациями членами Международной ассоциации “GS 1” представителями GS 1 в той или иной стране или группе стран.</p>
+          <p class="desc_p">На территории Республики Узбекистан такой организаций является Ассоциация “GS 1 Uzbekistan” .</p>
+          <p class="desc_p">Ассоциация автоматической идентификации “GS 1 Uzbekistan” (EAN Uzbekistan ) является не коммерческой организацией, является представительством и членом Международной Ассоциации “GS 1” ( EAN International , Бельгия) и Международной организации “ EPCglobal ” (США) в Узбекистане с 1998 г., состоящая из предприятий-членов, использующих международные стандартыавтоматической идентификации, товарной нумерации и штрихового кодирования GS 1 (EAN • UCC ).</p>
+        </div>
+        <div class="barcodeContainer">
+          <div class="barcodeTitleDiv">
+            <svg class="checkmark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.523 2 22 6.47701 22 12C22 17.523 17.523 22 12 22C6.47701 22 2 17.523 2 12C2 6.47701 6.47701 2 12 2ZM10.8573 15.7765L16.7073 9.9265C17.0983 9.5365 17.0983 8.9035 16.7073 8.5125C16.3163 8.1225 15.6842 8.1225 15.2933 8.5125L10.8573 12.9485L8.70725 10.7985C8.31625 10.4075 7.68425 10.4075 7.29325 10.7985C6.90225 11.1895 6.90225 11.8215 7.29325 12.2125L10.8573 15.7765Z" fill="#F8AF5E"/>
+            </svg>
+            <p class="bold-text">Штриховой код - это последовательность черных и белых полос, представляющая некоторую информацию в виде, удобном для считывания техническими средствами. Информация, содержащаяся в коде может быть напечатана в читаемом виде под кодом (расшифровка). Штриховые коды используются в торговле, складском учете, библиотечном деле, охранных системах, почтовом деле, сборочном производстве, обработка документов.</p>
+          </div>
+          <div class="barcodeImageDiv">
+            <img src="/mobile/img/barcode-mobile.png" alt="barcode mobile">
+          </div>
+        </div>
+        <div class="mt-20 column-td">
+          <h5 class="h5">Как рассчитать контрольную сумму штрих кода:</h5>
+          <table class="mt-15">
+            <tbody>
+              <tr class="grid2">
+                <td class="td">Сложить цифры, стоящие на четных местах ШК</td>
+                <td class="td">(6+0+7+2+1+0=16)</td>
+              </tr>
+              <tr class="grid2">
+                <td class="td">Полученную сумму умножить на три</td>
+                <td class="td">(16*3=48)</td>
+              </tr>
+              <tr class="grid2">
+                <td class="td">Сложить цифры, стоящие на нечетных местах ШК (кроме самой контрольной цифры)</td>
+                <td class="td">(4+0+3+6+1+2=16)</td>
+              </tr>
+              <tr class="grid2">
+                <td class="td">Сложить числа, полученные в пунктах 2 и 3</td>
+                <td class="td">(48+16=64)</td>
+              </tr>
+              <tr class="grid2">
+                <td class="td">Отбросить десятки</td>
+                <td class="td">(64-60=4)</td>
+              </tr>
+              <tr class="grid2">
+                <td class="td">Из числа 10 вычесть полученное в пункте 5</td>
+                <td class="td"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-20">
+          <div class="column-td">
+            <p class="desc_p">Результат должен совпадать с контрольной цифрой, которая позволяет "невооруженным глазом" оценить подлинность ШК и качество товара.</p>
+            <p class="desc_p">Ниже приведены штрих-коды некоторых стран мира:</p>
+          </div>
+          <table class="barcodesTable">
+            <thead>
+              <tr class="barcodesTableRow tableHead">
+                <th class="th">Префикс</th>
+                <th class="th">Регион мира</th>
+                <th class="th">Национальная организация GS1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="barcodesTableRow">
+                <td class="td">000- 0 19</td>
+                <td class="td">Босния-Герцеговина</td>
+                <td class="td">GS1 Serbia & Montenegro</td>
+              </tr>
+              <tr class="barcodesTableRow">
+                <td class="td">000- 0 19</td>
+                <td class="td">Босния-Герцеговина</td>
+                <td class="td">GS1 Serbia & Montenegro</td>
+              </tr>
+              <tr class="barcodesTableRow">
+                <td class="td">000- 0 19</td>
+                <td class="td">Босния-Герцеговина</td>
+                <td class="td">GS1 Serbia & Montenegro</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- === Main content ends here! === -->
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

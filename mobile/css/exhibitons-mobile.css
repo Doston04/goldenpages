@@ -11,7 +11,7 @@
   border-bottom: 1px solid var(--border);
 }
 .lastExhibitons {
-  margin-top: 40px;
+  margin: 40px 0 20px 0 !important;
   text-align: center;
 }
 .accordion {
@@ -126,6 +126,9 @@
 }
 .exhValue {
   color: var(--black);
+}
+.exhValue a {
+  color: var(--blue) !important;
 }
 .accordion-button:not(.collapsed) {
   color: red !important;
