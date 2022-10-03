@@ -315,10 +315,10 @@ tbody tr:nth-child(2n) {
 }
 
 .otherLink a {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--blue);
-  position: relative;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: var(--blue) !important;
+  position: relative !important;
 }
 
 .otherLink a::before {
@@ -333,7 +333,7 @@ tbody tr:nth-child(2n) {
 }
 
 .otherLink a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .tableDescDiv {
@@ -373,12 +373,12 @@ table p {
 }
 
 .column-td a {
-  color: var(--blue);
+  color: var(--blue) !important;
   text-decoration: none !important;
 }
 
 .column-td a:hover {
-  color: var(--blue);
+  color: var(--blue) !important;
   text-decoration: underline !important;
 }
 
