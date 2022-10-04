@@ -18,12 +18,13 @@
 .banners-top {
   height: 102px;
   margin-bottom: 20px;
+  border: 1px solid red;
 }
 
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  overflow: hidden
+  border: 1px solid red;
 }
 /* =============== */
 
@@ -108,7 +109,7 @@
 
 a {
   text-decoration: none !important;
-  color: currentColor !important;
+  color: currentColor;
 }
 
 table, tr, th, td {
@@ -137,6 +138,10 @@ tbody tr:nth-child(2n) {
 
 .gap-8 {
   gap: 8px !important;
+}
+
+.gap-10 {
+  gap: 10px !important;
 }
 
 .gap-12 {
@@ -172,7 +177,7 @@ tbody tr:nth-child(2n) {
 }
 
 .blue {
-  color: var(--blue);
+  color: var(--blue) !important;
 }
 
 .tableHead {
@@ -186,7 +191,6 @@ tbody tr:nth-child(2n) {
   line-height: 24px;
   font-weight: 700;
   color: var(--dark-blue);
-  letter-spacing: .4;
   border-right: 1px solid var(--border);
   text-align: center;
   display: flex;
@@ -195,6 +199,8 @@ tbody tr:nth-child(2n) {
   padding: 8px;
   width: 100%;
   background-color: var(--table-head);
+  min-height: 75px;
+  height: 100% ;
 }
 
 .th:last-child {
@@ -341,10 +347,10 @@ tbody tr:nth-child(2n) {
 }
 
 .staticContainer {
-  max-width: 1340px !important;
+  /* max-width: 1500px !important;
   width: 100% !important;
   margin: 0 auto !important;
-  display: block;
+  display: block; */
   padding-bottom: 80px !important;
   padding-inline: 20px;
 }
@@ -409,6 +415,9 @@ table p {
 }
 
 @media (max-width: 992px) {
+  .overflow_scroll {
+    overflow-x: scroll;
+  }
   .staticContainer {
     overflow-x: scroll;
   }
@@ -417,10 +426,10 @@ table p {
     padding: 0 20px 30px 20px;
   }
   .h1 {
-    font-size: 22px;
-    line-height: 30.8px;
-    font-weight: 500;
-    margin: 12px 0;
+    font-size: 22px !important;
+    line-height: 30.8px !important;
+    font-weight: 500 !important;
+    margin: 12px 0 !important;
   }
   .h3 {
     margin-top: 15px;
@@ -428,14 +437,18 @@ table p {
     line-height: 27px !important;
   }
   .desc_p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
   .h2 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 16px !important;
+    line-height: 20px !important;
   }
   .otherLink a {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .td {
     font-size: 14px;
     line-height: 24px;
   }

@@ -1,0 +1,72 @@
+@media (max-width: 992px) {
+  .h1, p {
+    margin: 0 !important;
+  }
+  .mainMiniContainer {
+    margin-top: 15px;
+  }
+  .numberImage {
+    position: relative;
+    width: 100%;
+    height: 150px;
+  }
+  .numberImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .plateImage img {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+  .newcar_big_table {
+    min-width: 1200px;
+    overflow-x: scroll;
+    margin-top: 25px;
+  }
+  .newcar_big_tableRow {
+    display: grid;
+    grid-template-columns: 8% 8% 16% 8% 8% 16% 18% 18%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .plateDiv {
+    background-color: var(--evenly-bg);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .plateImageDiv {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .plateImage {
+    position: relative;
+    max-width: 160px;
+    width: 100%;
+    height: 36px;
+  }
+  .plateContent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .plateTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--dark-blue);
+  }
+}

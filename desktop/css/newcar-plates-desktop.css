@@ -1,0 +1,83 @@
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  border: 1px solid var(--border);
+  padding: 38px 64px;
+  max-width: 600px;
+  width: 100%;
+  height: 215px;
+  position: relative;
+}
+
+.newCarPlateImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.newCarPlateImage img, .plateImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.newcar_plates_table, .newcar_big_table {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.newcar_plates_tableRow {
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+}
+
+.newcar_plates_tableRow .td:first-child {
+  font-weight: 700;
+}
+
+.plateImage {
+  position: relative;
+  max-width: 270px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+}
+
+.newcar_big_tableRow {
+  display: grid;
+  grid-template-columns: 8% 8% 16% 8% 8% 16% 18% 18%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.th {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .overflow_scroll {
+    overflow-x: scroll;
+  } 
+  .newcar_big_table, .newcar_plates_table {
+    min-width: 1500px;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageContainer {
+    padding: 20px;
+  }
+}
