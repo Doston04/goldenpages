@@ -1,0 +1,79 @@
+.holidays_table, .noHead_table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.holidays_tableRow {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.holiday_ul {
+  padding-left: 16px;
+}
+
+.holiday_ul li::marker {
+  color: var(--orange);
+}
+
+.noHead_tableRow {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.noHead_tableRow .td {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarImage {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: 800px;
+}
+
+.calendarImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .holidays_table, .noHead_table {
+    min-width: 700px;
+    overflow-x: scroll;
+  }
+  .calendarImage {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendarImage {
+    height: 360px;
+  }
+}
+
+@media (max-width: 540px) {
+  .calendarImage {
+    height: 300px;
+  }
+}

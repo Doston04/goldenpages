@@ -1,0 +1,51 @@
+@media (max-width: 992px) {
+  .h1, p {
+    margin: 0 !important;
+  }
+  .holidays_tableRow {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .holidays_tableRow .td:last-child {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .holiday_ul {
+    padding-left: 16px;
+  }
+  .holiday_ul li::marker {
+    color: var(--orange);
+  }
+  .holidayCard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--evenly-bg);
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .calendarImage {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .calendarImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .contentCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

@@ -3,11 +3,10 @@
   grid-template-columns: .7fr 1fr 1fr;
 }
 
-.mainContent {
-  overflow-x: scroll;
-}
-
 @media (max-width: 992px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
   .first-aid-table {
     min-width: 540px;
     overflow-x: scroll;

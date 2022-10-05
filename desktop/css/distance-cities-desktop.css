@@ -1,0 +1,47 @@
+.cities_table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.cities_tableRow {
+  display: grid;
+  grid-template-columns: 8% 7% 8% 7% 7% 7% 6% 6% 8% 6% 7% 7% 7% 9%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.none {
+  background-color: var(--table-head);
+}
+
+.h5 {
+  color: var(--black) !important;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .overflow_scroll {
+    overflow-x: scroll;
+  }
+  .cities_table {
+    min-width: 1500px;
+    overflow-x: scroll;
+  }
+}

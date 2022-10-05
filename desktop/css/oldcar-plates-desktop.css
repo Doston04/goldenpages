@@ -76,12 +76,13 @@
 
 .oldcarTableRow {
   display: grid;
-  grid-template-columns: 1.2fr .6fr .5fr .5fr .6fr 1fr;
+  /* grid-template-columns: 1.2fr .6fr .5fr .5fr .6fr 1fr; */
+  grid-template-columns: 22% 16% 14% 14% 16% 18%;
 }
 
 .row-td {
   display: grid;
-  grid-template-columns: .4fr .6fr;
+  grid-template-columns: 40% 60%;
   width: 100%;
   border-top: 1px solid var(--border);
   height: 100%;
@@ -125,6 +126,9 @@
   }
   .oldcarTableRow {
     grid-template-columns: 1fr .6fr .5fr .5fr .6fr 1fr;
+  }
+  .overflow_scroll {
+    overflow-x: scroll;
   }
   .mainContent {
     overflow-x: scroll;

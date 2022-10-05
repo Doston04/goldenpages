@@ -129,7 +129,6 @@ tbody tr:nth-child(2n) {
 .row-td {
   display: flex;
   align-items: center;
-  gap: 4px;
 }
 
 .gap-4 {
@@ -156,6 +155,10 @@ tbody tr:nth-child(2n) {
   gap: 20px !important;
 }
 
+.gap-30 {
+  gap: 30px !important;
+}
+
 .mt-15 {
   margin-top: 15px !important;
 }
@@ -175,6 +178,105 @@ tbody tr:nth-child(2n) {
 .mt-30 {
   margin-top: 30px !important;
 }
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+/* === MODAL === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll_lock {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  z-index: 2;
+  animation: fadeIn .5s ease;
+}
+
+.modalLinkDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background-color: #EBECEF;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(97, 97, 97, .3);
+  transition: .3s;
+}
+
+.modalLinkText {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.modalLinkDiv:active, .modal_xBtn:active {
+  transform: scale(.95);
+  transition: .3s;
+}
+
+.modal_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+}
+
+.modal_head_title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.modal_xBtn {
+  width: 20px;
+  height: 20px;
+  color: var(--dark-blue);
+  transition: .3s;
+}
+
+.modal_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_body_element {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: .4px;
+  color: var(--dark-blue);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 20px;
+}
+
+.modal_body_element:last-child {
+  border-bottom: none;
+}
+
+/* =========== */
 
 .blue {
   color: var(--blue) !important;
@@ -222,6 +324,8 @@ tbody tr:nth-child(2n) {
   font-size: 16px;
   line-height: 20px;
   color: var(--black);
+  min-height: 54px;
+  height: 100%;
 }
 
 .left-td {
@@ -415,6 +519,9 @@ table p {
 }
 
 @media (max-width: 992px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .overflow_scroll {
     overflow-x: scroll;
   }
@@ -431,25 +538,43 @@ table p {
     font-weight: 500 !important;
     margin: 12px 0 !important;
   }
+  .h2 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
   .h3 {
     margin-top: 15px;
     font-size: 18px !important;
     line-height: 27px !important;
   }
+  .h5 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    color: var(--dark-blue) !important;
+  }
   .desc_p {
     font-size: 14px !important;
-    line-height: 20px !important;
-  }
-  .h2 {
-    font-size: 16px !important;
-    line-height: 20px !important;
+    line-height: 24px !important;
   }
   .otherLink a {
     font-size: 14px !important;
     line-height: 24px !important;
   }
-  .td {
+  .td, .th {
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .breadcrumb {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .breadcrumb li {
+    margin-left: 16px;
+  }
+  .breadcrumb li::after {
+    right: -5px;
   }
 }
