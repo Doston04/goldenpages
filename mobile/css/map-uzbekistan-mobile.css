@@ -1,32 +1,89 @@
-.centerContent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.centerContent .h3 {
-	margin: 0;
-}
-
-.centerContent p {
-  text-align: center;
-}
-
-.centerContent .span-btn:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.mainMiniContainer {
-	margin-top: 15px;
-}
-
-.map {
-  padding: 16px 0;
-  height: auto;
-  width: 100%;
-}
-
-.region {
-  color: var(--dark-blue);
+@media (max-width: 992px) {
+  .h1, p {
+    margin: 0 !important;
+  }
+  .centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .centerContent .h3 {
+    margin: 0;
+  }
+  .centerContent p {
+    text-align: center;
+  }
+  .centerContent .span-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .mainMiniContainer {
+    margin-top: 15px;
+  }
+  .map {
+    padding: 16px 0;
+    height: auto;
+    width: 100%;
+  }
+  .region {
+    color: var(--dark-blue);
+    cursor: pointer;
+  }
+  .infoModal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    animation: fadeIn .5s ease;
+  }
+  .infoModal_content {
+    max-width: 320px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .infoModal_div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .key {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .value {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .xBtn_div {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .xBtn_div:active {
+    transform: scale(.95);
+    transition: .3s;
+  }
+  .modal_xBtn {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
 }

@@ -18,13 +18,13 @@
 .banners-top {
   height: 102px;
   margin-bottom: 20px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 /* =============== */
 
@@ -75,6 +75,10 @@
   flex: 1 1 auto;
   width: 100%;
   padding: 0 10px;
+}
+
+.mainContent::-webkit-scrollbar {
+  display: none;
 }
 
 .link-blue {
@@ -207,6 +211,7 @@ tbody tr:nth-child(2n) {
   background-color: #fff;
   z-index: 2;
   animation: fadeIn .5s ease;
+  overflow-y: scroll;
 }
 
 .modalLinkDiv {
@@ -236,12 +241,18 @@ tbody tr:nth-child(2n) {
   transition: .3s;
 }
 
+.modalContent {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal_head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .modal_head_title {
@@ -261,6 +272,9 @@ tbody tr:nth-child(2n) {
 .modal_body {
   display: flex;
   flex-direction: column;
+  max-height: 500px;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .modal_body_element {
@@ -334,6 +348,49 @@ tbody tr:nth-child(2n) {
   text-align: left;
 }
 
+/* === NavigationDiv Top === */
+.navigationDiv {
+  background-color: #EBECEF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+}
+
+.navigation_title {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin: 0 !important;
+}
+
+.navigation_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+  height: 150px;
+  max-width: 880px;
+  overflow-x: scroll;
+}
+
+.navigation_link {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-blue);
+  width: fit-content;
+}
+
+.navigation_link:hover {
+  text-decoration: underline;
+}
+
+/* ========================== */
+
 .arrowLink {
   font-size: 16px;
   line-height: 20px;
@@ -396,7 +453,8 @@ tbody tr:nth-child(2n) {
 
 .h4 {
   font-size: 16px !important;
-  line-height: 20px !important;
+  line-height: 24px !important;
+  margin: 0;
 }
 
 .h5 {
@@ -519,9 +577,6 @@ table p {
 }
 
 @media (max-width: 992px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
   .overflow_scroll {
     overflow-x: scroll;
   }

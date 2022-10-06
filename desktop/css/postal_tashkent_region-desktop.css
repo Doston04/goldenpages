@@ -1,0 +1,81 @@
+.h4 {
+  color: var(--dark-blue);
+}
+
+table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.sovetDiv {
+  background-color: var(--evenly-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+}
+
+.sovetDiv .desc_p {
+  width: 100%;
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_data {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid var(--border);
+  padding: 8px;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border_none {
+  border-right: none !important;
+}
+
+.bt_border {
+  border-bottom: 1px solid var(--border);
+}
+
+.postal_tableRow {
+  display: grid;
+  grid-template-columns: 25% 35% 40%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.postal_tableRow .th:last-child, .postal_tableRow .td:last-child {
+  padding: 0;
+}
+
+.table_title {
+  padding: 20px;
+}
+
+.th, .td {
+  min-height: 45px !important;
+}
+
+@media (max-width: 992px) {
+  .postal_table {
+    min-width: 900px;
+    overflow-x: scroll;
+  }
+}
