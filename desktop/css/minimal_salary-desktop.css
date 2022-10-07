@@ -1,0 +1,109 @@
+table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.ulDiv {
+  padding-left: 16px;
+}
+
+.ulDiv li::marker {
+  color: var(--orange);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_data {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid var(--border);
+  padding: 8px;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border_none {
+  border-right: none !important;
+}
+
+.bt_border {
+  border-bottom: 1px solid var(--border);
+}
+
+.padding_none {
+  padding: 0 !important;
+}
+
+.white_salary_tableRow {
+  display: grid;
+  grid-template-columns: 5% 20% 37.5% 37.5%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.minimal_pensiya_tableRow {
+  display: grid;
+  grid-template-columns: 9.5% 11.5% 15.5% 17% 15.5% 14% 17%;
+}
+
+.contentCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centeredBtn {
+  background: none;
+  border: 1px solid var(--dark-blue);
+  max-width: 480px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: .3s;
+  color: var(--dark-blue);
+}
+
+.centeredBtn:hover {
+  background-color: var(--dark-blue);
+  color: #fff;
+  transition: .3s;
+}
+
+.centeredBtn:active {
+  transform: scale(.95); 
+  transition: .3s;
+}
+
+.single_tariff_tableRow {
+  display: grid;
+  grid-template-columns: 16% 18% 33% 33%;
+}
+
+.bold_p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .mainContent, .overflow_scroll {
+    overflow-x: scroll;
+  }
+  .minimal_pensiya_table, .single_tariff_table, .white_salary_table  {
+    min-width: 1300px;
+    overflow-x: scroll;
+  }
+}
