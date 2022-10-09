@@ -1,0 +1,68 @@
+h1, p {
+  margin: 0 !important;
+}
+
+.proxodnoy_ball_table tr {
+  display: grid;
+  grid-template-columns: 4% 17% 10.5% 9.5% 14% 10.5% 6.5% 14% 14%;
+}
+
+.proxodnoy_ball_table thead tr:first-child {
+  border-radius: 10px 10px 0 0 !important;
+  overflow: hidden !important;
+}
+
+.proxodnoy_ball_table .grid2 {
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+}
+
+.inner_data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proxodnoy_ball_table tr .grid2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.proxodnoy_ball_table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+
+.proxodnoy_ball_table tr th:nth-child(5), .proxodnoy_ball_table tr th:nth-child(8), .proxodnoy_ball_table tr th:nth-child(9), 
+.proxodnoy_ball_table tr td:nth-child(5), .proxodnoy_ball_table tr td:nth-child(8), .proxodnoy_ball_table tr td:nth-child(9) {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.proxodnoy_ball_table tr th:nth-child(5) > span:first-child, .proxodnoy_ball_table tr th:nth-child(8) > span:first-child, .proxodnoy_ball_table tr th:nth-child(9) > span:first-child {
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  max-width: 100%;
+  width: 100%;
+}
+
+.proxodnoy_ball_table tr th:nth-child(5) .grid2 span, .proxodnoy_ball_table tr th:nth-child(8) .grid2 span, .proxodnoy_ball_table tr th:nth-child(9) .grid2 span {
+  padding: 8px;
+}
+
+.proxodnoy_ball_table tr th:nth-child(5) .grid2 span:first-child, .proxodnoy_ball_table tr th:nth-child(8) .grid2 span:first-child, .proxodnoy_ball_table tr th:nth-child(9) .grid2 span:first-child, .proxodnoy_ball_table tr td:nth-child(5) .grid2 span:first-child, .proxodnoy_ball_table tr td:nth-child(8) .grid2 span:first-child, .proxodnoy_ball_table tr td:nth-child(9) .grid2 span:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.proxodnoy_ball_table {
+  min-width: 1200px;
+  overflow-x: scroll;
+}

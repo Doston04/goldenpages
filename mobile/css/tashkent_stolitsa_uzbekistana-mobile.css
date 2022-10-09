@@ -1,0 +1,74 @@
+h1, p {
+  margin: 0 !important;
+}
+
+.hero_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero_grid > div {
+  width: 100%;
+}
+
+.grid_imageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageDiv_img {
+  position: relative;
+  max-width: 155px;
+  width: 100%;
+  height: 160px;
+}
+
+.imageDiv_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.key {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.keyValueText {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.mini_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 16px;
+}
+
+.mini_ul li {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.mini_ul li::marker {
+  color: var(--orange);
+}
+
+.tashkent_map {
+  width: 100% !important;
+  height: 220px !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}

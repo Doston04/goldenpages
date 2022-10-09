@@ -1,0 +1,146 @@
+.keyValueDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.key {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.value {
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--gray);
+}
+
+.mini_ul {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 40px;
+  height: 340px;
+  flex-wrap: wrap;
+}
+
+.mini_ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.mini_ul li::marker {
+  color: var(--orange);
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.info_grid:first-child {
+  border-top: 1px solid #EFEFEF;
+}
+
+.grid_image_div {
+  padding: 30px 15px;
+}
+
+.grid_image {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+}
+
+.grid_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.grid_content {
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #EFEFEF;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid_content .keyValueDiv {
+  align-items: flex-start;
+}
+
+.grid_content .key, .grid_content .value {
+  line-height: 24px;
+}
+
+.grid_content .value {
+  color: var(--black);
+}
+
+.mini_ul.black li::marker {
+  color: var(--black);
+}
+
+.mini_ul.black {
+  height: auto;
+  padding-left: 24px;
+}
+
+.bolder_text {
+  font-weight: 500;
+}
+
+.mainContent {
+  overflow-x: scroll;
+}
+
+@media (max-width: 992px) {
+  .keyValueDiv {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .mini_ul {
+    flex-direction: column;
+    height: auto;
+  }
+  .info_grid {
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  .grid_image {
+    height: 260px;
+  }
+  .grid_image_div, .grid_content {
+    padding: 15px;
+    border: none;
+  }
+  .key, .value {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid_image {
+    height: 180px;
+  }
+  .grid_image_div, .grid_content {
+    padding: 0px;
+  }
+  .info_grid, .info_container {
+    gap: 24px;
+  }
+}

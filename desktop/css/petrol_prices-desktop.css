@@ -1,0 +1,99 @@
+table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.petrol_price_tableRow {
+  display: grid;
+  grid-template-columns: 18% 16% 16% 16% 16% 18%;
+}
+
+.inner_td {
+  display: block;
+}
+
+.gray_border {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--border);
+  margin-top: 30px;
+}
+
+.wrapDiv {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.wrapLink {
+  border: 1px dashed var(--dark-blue);
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 8px;
+  color: var(--dark-blue);
+}
+
+.wrapLink:hover {
+  text-decoration: none !important;
+}
+
+.wrapLink.more:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.wrapLink.more {
+  background-color: var(--orange);
+  color: #fff !important;
+  border: none;
+}
+
+.gridDiv { 
+  display: grid;
+  grid-template-columns: .4fr .6fr;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid_image_div {
+  position: relative;
+  width: 100%;
+  max-height: 420px;
+  height: 100%;
+}
+
+.grid_image_div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_text_div {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 992px) {
+  .gridDiv {
+    grid-template-columns: 1fr;
+  }
+  .grid_image_div {
+    height: 260px;
+  }
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .petrol_price_table { 
+    min-width: 1000px;
+    overflow-x: scroll;
+  }
+}

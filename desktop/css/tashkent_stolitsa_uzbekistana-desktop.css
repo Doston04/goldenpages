@@ -1,0 +1,99 @@
+.hero_grid {
+  display: flex;
+  gap: 24px;
+}
+
+.hero_grid > div {
+  width: 100%;
+}
+
+.grid_imageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageDiv_img {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  height: 370px;
+}
+
+.imageDiv_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.key {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.keyValueText {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.mainContent {
+  overflow-x: scroll;
+}
+
+.gray_border {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EFEFEF;
+  margin-top: 30px;
+}
+
+.mini_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 16px;
+}
+
+.mini_ul li::marker {
+  color: var(--orange);
+}
+
+.text_grid {
+  gap: 24px;
+  display: flex;
+}
+
+.text_grid > div {
+  width: 100%;
+}
+
+.tashkent_map {
+  width: 100% !important;
+  height: 320px !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 992px) {
+  .hero_grid, .text_grid {
+    flex-direction: column;
+  }
+  .imageDiv_img, .tashkent_map {
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .tashkent_map {
+    height: 210px !important;
+  }
+}

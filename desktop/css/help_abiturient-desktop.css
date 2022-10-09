@@ -1,0 +1,168 @@
+table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.innerFlexContainer {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-aside {
+  max-width: 260px;
+  width: 100%;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 0 0 40px rgba(57, 84, 87, .6); */
+  box-shadow: 0px 0px 40px 0px #3954570F;
+  height: fit-content;
+}
+
+.aside_element {
+  padding: 20px;
+  border-bottom: 1px solid #ECECEC;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--dark-blue);
+}
+
+.border_none {
+  border: none;
+}
+
+.aside_btnDiv {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: .2px;
+  background-color: #EBECEF;
+}
+
+.aside_Ul_container {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 !important;
+}
+
+.youtube_btn {
+  width: 62px;
+  height: 43px;
+  cursor: pointer;
+}
+
+.videoDiv {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.video_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rowFlex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.red_title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--red) !important;
+  width: 100%;
+}
+
+.h4 {
+  color: var(--dark-blue) !important;
+}
+
+.gray_border { 
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+  margin-top: 30px;
+}
+
+.pl-16 { 
+  padding-left: 16px;
+}
+
+.fl::first-letter {
+  padding-left: 16px;
+}
+
+.abiturent_tableRow {
+  display: grid;
+  grid-template-columns: 12% 76% 12%;
+}
+
+.bold_td {
+  font-weight: 700 !important;
+  color: var(--dark-blue) !important;
+  letter-spacing: .4px !important;
+}
+
+.tableHead {
+  display: block;
+}
+
+.modalLinkDiv {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .overflow_scroll, .mainContent, .innerFlexContainer {
+    overflow-x: scroll;
+  }
+  .abiturent_table {
+    min-width: 800px;
+    overflow-x: scroll;
+  }
+  .navigation-aside {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 992px) {
+  .innerFlexContainer {
+    flex-direction: column;
+  }
+  .modalLinkDiv {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .navigation-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .videoDiv {
+    width: 100%;
+    height: 210px;
+  }
+}

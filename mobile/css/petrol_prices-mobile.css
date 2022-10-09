@@ -1,0 +1,141 @@
+.h1, p {
+  margin: 0 !important;
+}
+
+.grid_image_div {
+  position: relative;
+  width: 100%;
+  height: 210px;
+}
+
+.grid_image_div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrowDown {
+  width: 16px !important;
+  height: 16px !important;
+  color: var(--dark-blue);
+  transition: .3s;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-item {
+  background-color: #F8F8FB !important;
+  border: none !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+.accordion-button .arrowDown {
+  transform: rotate(180deg);
+}
+
+.accordion-button.collapsed .arrowDown {
+  transform: rotate(0deg);
+  transition: .3s;
+}
+
+.accordion-button:not(.collapsed), .accordion_btn_text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  background: none;
+  box-shadow: none !important;
+  width: 100%;
+}
+
+.accordion-body {
+  padding: 0 15px 20px 15px;
+}
+
+.accordion-button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #F8F8FB;
+}
+
+.accordion-button {
+  padding: 15px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  gap: 16px !important;
+  border-radius: 0 !important;
+  background-color: #F8F8FB !important;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-svg {
+  margin-bottom: 5px;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.keyValueDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.key {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.value {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--black);
+}
+
+.wrapDiv {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: scroll;
+}
+
+.wrapLink {
+  border: 1px dashed var(--dark-blue);
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 8px;
+  color: var(--dark-blue);
+}
+
+.wrapLink:hover {
+  text-decoration: none !important;
+}
+
+.wrapLink.more:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.wrapLink.more {
+  background-color: var(--orange);
+  color: #fff !important;
+  border: none;
+}

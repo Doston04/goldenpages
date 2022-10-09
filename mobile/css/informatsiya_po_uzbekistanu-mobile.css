@@ -1,0 +1,90 @@
+h1, p {
+  margin: 0 !important;
+}
+
+.key {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.keyValueText {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.mini_ul {
+  padding-left: 16px;
+}
+
+.mini_ul li::marker {
+  color: var(--orange);
+}
+
+.info_container {
+  gap: 30px;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid_image {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 210px;
+}
+
+.grid_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.grid_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid_content .keyValueDiv {
+  align-items: flex-start;
+}
+
+.grid_content .key, .grid_content .value {
+  line-height: 24px;
+}
+
+.grid_content .value {
+  color: var(--black);
+}
+
+.mini_ul.black li::marker {
+  color: var(--black);
+}
+
+.mini_ul.black {
+  height: auto;
+  padding-left: 24px;
+}
+
+.bolder_text {
+  font-weight: 500;
+}
+
+/* @media (max-width: 600px) {
+  .grid_image img {
+    object-fit: cover;
+  }
+} */
