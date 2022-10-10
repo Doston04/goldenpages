@@ -1,0 +1,135 @@
+table {
+  max-width: 100%;
+  width: 100%;
+}
+
+.tables_grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.region_table thead tr:first-child {
+  border-radius: 10px 10px 0 0 !important;
+  overflow: hidden;
+  display: block;
+}
+
+.region_table thead tr:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--evenly-bg) !important;
+}
+
+.region_table thead tr:nth-child(2) td {
+  border: none !important;
+  padding: 0 !important;
+  max-width: 100%;
+  width: 100%;
+  min-height: auto !important;
+}
+
+.region_table thead tr:nth-child(3) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.region_table tbody tr {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.region_table tbody tr:last-child {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-top: none;
+  gap: 8px;
+  padding: 12px;
+}
+
+.region_table tbody tr:last-child td {
+  border: none !important;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.last_region_table thead tr:nth-child(1) {
+  border-radius: 10px 10px 0 0 !important;
+  overflow: hidden;
+  display: block;
+}
+
+.last_region_table thead tr:nth-child(2) {
+  background-color: var(--evenly-bg);
+}
+
+.last_region_table thead tr:nth-child(2) td {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-blue) !important;
+  border: none !important;
+}
+
+.last_region_table tbody tr {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.gray_text {
+  color: var(--gray) !important;
+}
+
+.contentCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gp_map_uzb_image {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  height: 400px;
+}
+
+.gp_map_uzb_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .tables_grid_container {
+    grid-template-columns: 1fr;
+  }
+  .gp_map_uzb_image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    overflow-x: scroll;
+  }
+  .gp_map_uzb_image {
+    height: 210px;
+  }
+}

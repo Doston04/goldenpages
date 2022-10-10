@@ -19,10 +19,6 @@ table, thead, tbody {
   width: 100%;
 }
 
-p {
-  margin: 0 !important;
-}
-
 /* === Banners === */
 .banners-top {
   height: 102px;
@@ -489,11 +485,12 @@ td {
   flex-direction: column;
   gap: 15px;
   flex-wrap: wrap;
-  height: 150px;
+  height: 160px;
   max-width: 100%;
   overflow-x: scroll;
   cursor: grab;
   scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
 }
 
 .navigation_container::-webkit-scrollbar {
@@ -547,6 +544,13 @@ td {
   font-size: 16px !important;
   line-height: 24px !important;
   color: var(--black) !important;   
+  margin: 0 !important;
+}
+
+p {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: var(--black) !important;
   margin: 0 !important;
 }
 
@@ -793,6 +797,10 @@ table p {
     color: var(--dark-blue) !important;
   }
   .desc_p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  p {
     font-size: 14px !important;
     line-height: 24px !important;
   }

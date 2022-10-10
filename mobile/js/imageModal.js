@@ -1,17 +1,17 @@
-const modal = document.querySelector(".imageModal")
-const xBtn = document.querySelector(".xBtn_div")
+const imageModal = document.querySelector(".imageModal")
+const image_xBtn = document.querySelector(".xBtn_div")
 const element = document.querySelector(".codesImage")
 
 element.addEventListener("click", () => {
-  modal.style.display = "flex"
+  imageModal.style.display = "flex"
 })
 
-xBtn.addEventListener("click", () => {
-  modal.style.display = "none"
+image_xBtn.addEventListener("click", () => {
+  imageModal.style.display = "none"
 })
 
 window.addEventListener("click", (e) => {
-  if (e.target == modal) {
-    modal.style.display = "none"
+  if (e.target == imageModal) {
+    imageModal.style.display = "none"
   }
 })

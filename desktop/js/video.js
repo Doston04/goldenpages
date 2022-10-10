@@ -2,23 +2,44 @@ const btn1 = document.querySelector("#btn1")
 const btn2 = document.querySelector("#btn2")
 const video1 = document.querySelector("#video1")
 const video2 = document.querySelector("#video2")
+video1.removeAttribute("controls")
+video2.removeAttribute("controls")
 
-btn1.addEventListener("click", () => {
-  video1.play()
-  btn1.style.display = "none"
-})
+const videoDiv1 = document.querySelector("#videoDiv1")
+const videoDiv2 = document.querySelector("#videoDiv2")
 
-video1.addEventListener("click", () => {
-  video1.stop()
-  btn1.style.display = "flex"
-})
+let clicked = false
 
-btn2.addEventListener("click", () => {
-  video2.play()
-  btn2.style.display = "none"
-})
+const clickFunction1 = () => {
+  if (clicked) {
+    btn1.style.display = "flex"
+    video1.pause()
+    clicked = false
+    video1.toggleAttribute("controls")
+  } else {
+    btn1.style.display = "none"
+    video1.play()
+    clicked = true
+    video1.toggleAttribute("controls")
+  }
+}
 
-video2.addEventListener("click", () => {
-  video2.stop()
-  btn2.style.display = "flex"
-})
+videoDiv1.addEventListener("click", clickFunction1)
+
+let clicked2 = false
+
+const clickFunction2 = () => {
+  if (clicked2) {
+    btn2.style.display = "flex"
+    video2.pause();
+    clicked2 = false
+    video2.toggleAttribute("controls")
+  } else {
+    btn2.style.display = "none"
+    video2.play();
+    clicked2 = true
+    video2.toggleAttribute("controls")
+  }
+}
+
+videoDiv2.addEventListener("click", clickFunction2)
