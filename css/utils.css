@@ -14,9 +14,24 @@
   --evenly-bg: #F8F8FB;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
+
 table, thead, tbody {
   max-width: 100%;
   width: 100%;
+}
+
+table thead tr:first-child {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  display: grid;
 }
 
 /* === Banners === */
@@ -32,6 +47,40 @@ table, thead, tbody {
   /* border: 1px solid red; */
 }
 /* =============== */
+
+/* === */
+.negative {
+  color: var(--blue) !important;
+  position: relative;
+}
+
+.negative::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -10px;
+  width: 7px;
+  height: 9px;
+  background-color: var(--blue);
+  clip-path: polygon(0 0, 50% 60%, 100% 0);
+}
+
+.positive {
+  color: var(--red) !important;
+  position: relative;
+}
+
+.positive::after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: -10px;
+  width: 7px;
+  height: 9px;
+  background-color: var(--red);
+  clip-path: polygon(0 100%, 50% 40%, 100% 100%);
+}
+/* === */
 
 .breadcrumb li:first-child {
   margin-left: 0;
@@ -80,10 +129,6 @@ table, thead, tbody {
   flex: 1 1 auto;
   width: 100%;
   padding: 0 10px;
-}
-
-.mainContent::-webkit-scrollbar {
-  display: none;
 }
 
 .link-blue {
@@ -368,12 +413,6 @@ tbody tr:nth-child(2n) {
   color: var(--blue) !important;
 }
 
-.tableHead {
-  border-radius: 10px 10px 0 0 !important;
-  overflow: hidden !important;
-  background-color: var(--table-head) !important;
-}
-
 .th {
   font-size: 16px;
   line-height: 24px;
@@ -548,10 +587,10 @@ td {
 }
 
 p {
-  font-size: 16px !important;
-  line-height: 24px !important;
-  color: var(--black) !important;
-  margin: 0 !important;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
 }
 
 h1 {
@@ -729,7 +768,7 @@ table p {
   margin: 0;
 }
 
-.column-td a {
+/* .column-td a {
   color: var(--blue) !important;
   text-decoration: none !important;
 }
@@ -737,7 +776,7 @@ table p {
 .column-td a:hover {
   color: var(--blue) !important;
   text-decoration: underline !important;
-}
+} */
 
 .red {
   color: var(--red) !important;
@@ -760,6 +799,11 @@ table p {
   padding: 0 20px 30px 20px;
 }
 
+.kurs_arrow { 
+  width: 12px;
+  height: 9px;
+}
+
 @media (max-width: 1200px) {
   .otherLinksDiv {
     margin-top: 20px;
@@ -771,6 +815,9 @@ table p {
 }
 
 @media (max-width: 992px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .overflow_scroll {
     overflow-x: scroll;
   }
@@ -816,9 +863,6 @@ table p {
     font-size: 14px;
     line-height: 24px;
   }
-}
-
-@media (max-width: 360px) {
   .breadcrumb {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -830,3 +874,16 @@ table p {
     right: -5px;
   }
 }
+
+/* @media (max-width: 360px) {
+  .breadcrumb {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .breadcrumb li {
+    margin-left: 16px;
+  }
+  .breadcrumb li::after {
+    right: -5px;
+  }
+} */

@@ -171,6 +171,22 @@
   object-fit: cover;
 }
 
+.gp_map_metro {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+}
+
+.gp_map_metro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 1200px) {
   .overflow_scroll {
     overflow-x: scroll;
@@ -190,5 +206,17 @@
 @media (max-width: 992px) {
   .metro_map_img, .gridContainer_img {
     height: 210px;
+  }
+  .gp_map_metro {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gp_map_metro {
+    height: 200px;
+  }
+  .gp_map_metro img {
+    object-fit: cover;
   }
 }

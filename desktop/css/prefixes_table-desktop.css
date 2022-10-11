@@ -25,17 +25,17 @@ table {
   object-fit: contain;
 }
 
-.prefixes_tableRow {
+.prefixes_table tr {
   display: grid;
   grid-template-columns: 17% 23% 18% 20% 22%;
 }
 
-.th a {
+th a {
   color: var(--blue);
   border-bottom: 1px dashed var(--blue);
 }
 
-.th input {
+th input {
   max-width: 90%;
   width: 100%;
   border: none;
@@ -45,12 +45,8 @@ table {
   border: 1px solid var(--border);
 }
 
-.th input:focus {
+th input:focus {
   outline: none;
-}
-
-.bt {
-  border-top: 1px solid var(--border);
 }
 
 .bold_text {

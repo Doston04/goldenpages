@@ -11,7 +11,7 @@
   min-width: 800px;
   overflow-x: scroll;
 }
-.phone_codes_tableRow {
+.phone_codes_table tr {
   display: grid;
   grid-template-columns: 25% 15% 60%;
   max-width: 100%;

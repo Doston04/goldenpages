@@ -83,14 +83,14 @@ table {
   height: 24px;
 }
 
-.streets_tableRow {
+.streets_table tr {
   display: grid;
   grid-template-columns: 15% 15% 18% 19% 15% 18%;
   max-width: 100%;
   width: 100%;
 }
 
-.massives_tableRow {
+.massives_table tr {
   display: grid;
   grid-template-columns: 25% 25% 24% 26%;
   max-width: 100%;

@@ -20,11 +20,25 @@
   min-width: 820px;
   overflow-x: scroll;
 }
-.single_tariff_tableRow {
+.white_salary_table thead tr th:nth-child(2),
+.white_salary_table thead tr th:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+}
+.white_salary_table thead tr th:nth-child(2) div:last-child,
+.white_salary_table thead tr th:nth-child(3) div:last-child {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.single_tariff_table tr {
   display: grid;
   grid-template-columns: 16% 28% 28% 28%;
 }
-.white_salary_tableRow {
+.white_salary_table tr {
   display: grid;
   grid-template-columns: 20% 40% 40%;
   max-width: 100%;
@@ -67,14 +81,14 @@
   font-weight: 700;
   color: var(--dark-blue);
 }
-.miniTableRow {
+.miniTable tr {
   display: grid;
   grid-template-columns: 30% 30% 40%;
 }
 .centeredBtn {
-  background: none;
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
+  background: var(--orange);
+  border: 1px solid var(--orange);
+  color: #fff;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;

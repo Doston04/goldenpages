@@ -4,9 +4,9 @@
   gap: 30px;
   margin-top: 30px;
 }
-.phoneCodeTableRow {
+.phoneCodeTable tr {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
 }
 .tableElement {
   display: flex;

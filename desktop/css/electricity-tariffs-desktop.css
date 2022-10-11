@@ -5,12 +5,17 @@
   color: var(--black);
 }
 
-.electricity_tableRow {
+.electricity_table tr {
   display: grid;
   grid-template-columns: 12% 58% 30%;
 }
 
 .fullGrid_tableRow {
+  display: grid;
+  grid-template-columns: 70% 30% !important;
+}
+
+.fullGridTable tr {
   display: grid;
   grid-template-columns: 70% 30%;
 }

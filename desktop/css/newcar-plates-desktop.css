@@ -34,12 +34,18 @@
   width: 100%;
 }
 
-.newcar_plates_tableRow {
+.newcar_plates_table tr {
   display: grid;
   grid-template-columns: 25% 45% 30%;
 }
 
-.newcar_plates_tableRow .td:first-child {
+.newcar_plates_table tbody tr td:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newcar_plates_table tr td:first-child {
   font-weight: 700;
 }
 
@@ -51,14 +57,14 @@
   height: 100%;
 }
 
-.newcar_big_tableRow {
+.newcar_big_table tr {
   display: grid;
   grid-template-columns: 8% 8% 16% 8% 8% 16% 18% 18%;
   max-width: 100%;
   width: 100%;
 }
 
-.th {
+th {
   font-size: 14px;
   line-height: 20px;
 }

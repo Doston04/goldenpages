@@ -38,41 +38,44 @@
         </div>
         <div class="mt-20 column-td">
           <h5 class="h5">Как рассчитать контрольную сумму штрих кода:</h5>
-          <table class="mt-15">
-            <tbody>
-              <tr class="grid2">
-                <td class="td">Сложить цифры, стоящие на четных местах ШК</td>
-                <td class="td">(6+0+7+2+1+0=16)</td>
-              </tr>
-              <tr class="grid2">
-                <td class="td">Полученную сумму умножить на три</td>
-                <td class="td">(16*3=48)</td>
-              </tr>
-              <tr class="grid2">
-                <td class="td">Сложить цифры, стоящие на нечетных местах ШК (кроме самой контрольной цифры)</td>
-                <td class="td">(4+0+3+6+1+2=16)</td>
-              </tr>
-              <tr class="grid2">
-                <td class="td">Сложить числа, полученные в пунктах 2 и 3</td>
-                <td class="td">(48+16=64)</td>
-              </tr>
-              <tr class="grid2">
-                <td class="td">Отбросить десятки</td>
-                <td class="td">(64-60=4)</td>
-              </tr>
-              <tr class="grid2">
-                <td class="td">Из числа 10 вычесть полученное в пункте 5</td>
-                <td class="td"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="overflow_scroll">
+            <table class="two_column_table">
+              <tbody>
+                <tr class="grid2">
+                  <td class="td">Сложить цифры, стоящие на четных местах ШК</td>
+                  <td class="td">(6+0+7+2+1+0=16)</td>
+                </tr>
+                <tr class="grid2">
+                  <td class="td">Полученную сумму умножить на три</td>
+                  <td class="td">(16*3=48)</td>
+                </tr>
+                <tr class="grid2">
+                  <td class="td">Сложить цифры, стоящие на нечетных местах ШК (кроме самой контрольной цифры)</td>
+                  <td class="td">(4+0+3+6+1+2=16)</td>
+                </tr>
+                <tr class="grid2">
+                  <td class="td">Сложить числа, полученные в пунктах 2 и 3</td>
+                  <td class="td">(48+16=64)</td>
+                </tr>
+                <tr class="grid2">
+                  <td class="td">Отбросить десятки</td>
+                  <td class="td">(64-60=4)</td>
+                </tr>
+                <tr class="grid2">
+                  <td class="td">Из числа 10 вычесть полученное в пункте 5</td>
+                  <td class="td"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div class="mt-20">
           <div class="column-td">
             <p class="desc_p">Результат должен совпадать с контрольной цифрой, которая позволяет "невооруженным глазом" оценить подлинность ШК и качество товара.</p>
             <p class="desc_p">Ниже приведены штрих-коды некоторых стран мира:</p>
           </div>
-          <table class="barcodesTable">
+          <div class="overflow_scroll">
+            <table class="barcodesTable">
             <thead>
               <tr class="barcodesTableRow tableHead">
                 <th class="th">Префикс</th>
@@ -98,6 +101,7 @@
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
       </div>
       <!-- === Main content ends here! === -->

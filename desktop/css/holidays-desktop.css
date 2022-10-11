@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.holidays_tableRow {
+.holidays_table tr {
   display: grid;
   grid-template-columns: 25% 50% 25%;
   max-width: 100%;
@@ -18,7 +18,7 @@
   color: var(--orange);
 }
 
-.noHead_tableRow {
+.noHead_table tr {
   display: grid;
   grid-template-columns: 30% 70%;
   max-width: 100%;

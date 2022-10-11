@@ -3,9 +3,16 @@ table {
   width: 100%;
 }
 
-.petrol_price_tableRow {
+.petrol_price_table tr {
   display: grid;
   grid-template-columns: 18% 16% 16% 16% 16% 18%;
+}
+
+.petrol_price_table tbody tr td:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
 }
 
 .inner_td {

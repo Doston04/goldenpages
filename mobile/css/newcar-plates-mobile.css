@@ -30,7 +30,7 @@ position: absolute;
   overflow-x: scroll;
   margin-top: 25px;
 }
-.newcar_big_tableRow {
+.newcar_big_table tr {
   display: grid;
   grid-template-columns: 8% 8% 16% 8% 8% 16% 18% 18%;
   max-width: 100%;

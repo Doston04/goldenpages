@@ -42,9 +42,16 @@
   width: 100%;
 }
 
-.table1TableRow {
+.table1 tr {
   display: grid;
   grid-template-columns: 1fr .35fr .3fr .2fr;
+}
+
+.table1 tbody tr td:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .bold_p {
@@ -61,7 +68,7 @@
   gap: 25px;
 }
 
-.grid2TableRow {
+.tableGrid tr {
   display: grid;
   grid-template-columns: .75fr .25fr;
 }

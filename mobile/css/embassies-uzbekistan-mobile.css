@@ -12,7 +12,7 @@
 .istochnikDiv .desc_p a {
   color: var(--blue);
 }
-.istochnikDiv .desc_p a:hover, .td a:hover {
+.istochnikDiv .desc_p a:hover, td a:hover {
   text-decoration: underline;
 }
 .mainMiniContainer {

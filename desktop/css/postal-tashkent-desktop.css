@@ -17,9 +17,49 @@
   margin-top: 20px;
 }
 
-.tableRow {
+.postalCodesTable tr {
   display: grid;
-  grid-template-columns: .5fr 1fr 1fr 1fr;
+  grid-template-columns: 19% 27% 27% 27%;
+}
+
+.postalCodesTable thead tr th:last-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.postalCodesTable thead tr th:last-child div:last-child,
+.postalCodesTable tbody tr td:last-child {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.postalCodesTable thead tr th:last-child div:last-child span,
+.postalCodesTable tbody tr td:last-child span {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postalCodesTable thead tr th:last-child div:last-child span:last-child,
+.postalCodesTable tbody tr td:last-child span:last-child {
+  border-left: 1px solid var(--border);
+}
+
+.postalCodesTable tbody tr td:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+.postalCodesTable tbody tr td:nth-child(3) div:last-child {
+  display: flex;
+  flex-direction: column;
 }
 
 .grid2 {
@@ -44,11 +84,11 @@
   border-right: none;
 }
 
-.th:last-child, .td:last-child {
+th:last-child, td:last-child {
   padding: 0;
 }
 
-.td .gridTh {
+td .gridTh {
   padding: 10px;
 }
 

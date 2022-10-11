@@ -1,7 +1,7 @@
 .h1, p {
   margin: 0 !important;
 }
-.holidays_tableRow {
+.holidays_table tr {
   display: grid;
   grid-template-columns: 30% 70%;
 }
