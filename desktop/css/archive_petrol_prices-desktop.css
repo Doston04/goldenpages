@@ -5,7 +5,14 @@ table {
 
 .petrol_price_table tr {
   display: grid;
-  grid-template-columns: 18% 16% 16% 16% 16% 18%;
+  /* grid-template-columns: 18% 16% 16% 16% 16% 18%; */
+  grid-template-columns: 16% repeat(7, 12%);
+}
+
+.petrol_price_table tbody tr td:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .petrol_price_table thead tr:first-child, .dynamic_prices_table thead tr:first-child {

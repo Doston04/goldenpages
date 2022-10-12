@@ -122,6 +122,12 @@ table {
   grid-template-columns: 18% 16% 16% 16% 16% 18%;
 }
 
+.petrol_price_table tbody tr td:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .petrol_price_table {
   min-width: 800px;
   overflow-x: scroll;

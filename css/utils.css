@@ -38,13 +38,13 @@ table thead tr:first-child {
 .banners-top {
   height: 102px;
   margin-bottom: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* =============== */
 
