@@ -38,13 +38,11 @@ table thead tr:first-child {
 .banners-top {
   height: 102px;
   margin-bottom: 20px;
-  /* border: 1px solid red; */
 }
 
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  /* border: 1px solid red; */
 }
 /* =============== */
 
@@ -439,7 +437,7 @@ th {
   line-height: 24px;
   font-weight: 700;
   color: var(--dark-blue);
-  border-right: 1px solid var(--border);
+  border-right: 1px solid var(--border) !important;
   text-align: center;
   display: flex;
   align-items: center;
@@ -452,11 +450,11 @@ th {
 }
 
 th:last-child {
-  border-right: none;
+  border-right: none !important;
 }
 
 .td:first-child {
-  border-left: 1px solid var(--border);
+  border-left: 1px solid var(--border) !important;
 }
 
 .td {
@@ -465,8 +463,8 @@ th:last-child {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border) !important;
+  border-bottom: 1px solid var(--border) !important;
   font-size: 16px;
   line-height: 20px;
   color: var(--black);
@@ -475,7 +473,7 @@ th:last-child {
 }
 
 td:first-child {
-  border-left: 1px solid var(--border);
+  border-left: 1px solid var(--border) !important;
 }
 
 td {
