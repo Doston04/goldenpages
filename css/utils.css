@@ -14,12 +14,12 @@
   --evenly-bg: #F8F8FB;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 12px;
   background-color: var(--border);
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: var(--black);
 }
 
@@ -38,13 +38,13 @@ table thead tr:first-child {
 .banners-top {
   height: 102px;
   margin-bottom: 20px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .banners-aside {
   max-width: 200px !important;
   width: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 /* =============== */
 
@@ -818,7 +818,7 @@ table p {
   ::-webkit-scrollbar {
     display: none;
   }
-  .overflow_scroll {
+  .scroll_table, .overflow_scroll {
     overflow-x: scroll;
   }
   .staticContainer {
@@ -872,6 +872,16 @@ table p {
   }
   .breadcrumb li::after {
     right: -5px;
+  }
+  .arrowLink {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrowLink::after {
+    top: 80%;
   }
 }
 

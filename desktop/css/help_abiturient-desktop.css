@@ -115,7 +115,7 @@ table {
   padding-left: 16px;
 }
 
-.abiturent_tableRow {
+.abiturent_table tbody tr {
   display: grid;
   grid-template-columns: 12% 76% 12%;
 }
@@ -124,10 +124,6 @@ table {
   font-weight: 700 !important;
   color: var(--dark-blue) !important;
   letter-spacing: .4px !important;
-}
-
-.tableHead {
-  display: block;
 }
 
 .modalLinkDiv {

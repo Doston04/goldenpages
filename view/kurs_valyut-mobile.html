@@ -15,18 +15,531 @@
       <div class="headerTitle">
         <h1 class="h1">Курс доллара, рубля, евро и франка к суму в Узбекистане</h1>
       </div>
-      <!-- === Main content starts here! === -->
-      <div class="mainMiniContainer">
-        <div class="tableDescDiv">
-          <p class="update_time">Обновлено: 02.06.21</p>
+      <!-- === IMAGE-MODAL === -->
+        <div class="imageModal">
+          <div class="imageModal_content">
+            <div class="imagesContainer"></div>
+            <div class="xBtn_div">
+              <svg class="image_modal_xBtn" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.27107 0.375686C3.01866 0.131898 2.68059 -0.00299869 2.32968 5.05925e-05C1.97878 0.00309988 1.64311 0.143851 1.39497 0.391989C1.14683 0.640127 1.00608 0.975798 1.00303 1.3267C0.999981 1.67761 1.13488 2.01568 1.37867 2.26809L9.10754 9.99696L1.37733 17.7258C1.2495 17.8493 1.14755 17.997 1.0774 18.1603C1.00726 18.3235 0.970345 18.4992 0.968801 18.6769C0.967256 18.8546 1.00112 19.0308 1.06841 19.1953C1.1357 19.3597 1.23508 19.5092 1.36074 19.6348C1.4864 19.7605 1.63583 19.8599 1.8003 19.9272C1.96478 19.9945 2.14101 20.0283 2.31871 20.0268C2.49641 20.0252 2.67203 19.9883 2.83531 19.9182C2.99859 19.848 3.14627 19.7461 3.26973 19.6182L10.9999 11.8894L18.7288 19.6182C18.9812 19.862 19.3193 19.9969 19.6702 19.9939C20.0211 19.9908 20.3568 19.8501 20.6049 19.6019C20.8531 19.3538 20.9938 19.0181 20.9969 18.6672C20.9999 18.3163 20.865 17.9783 20.6212 17.7258L12.8923 9.99696L20.6212 2.26809C20.865 2.01568 20.9999 1.67761 20.9969 1.3267C20.9938 0.975798 20.8531 0.640127 20.6049 0.391989C20.3568 0.143851 20.0211 0.00309988 19.6702 5.05925e-05C19.3193 -0.00299869 18.9812 0.131898 18.7288 0.375686L10.9999 8.10456L3.27107 0.374348V0.375686Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="otherLinksDiv">
-          <h2 class="h2">Ссылки по теме:</h2>
-          <div class="otherLinks">
-            <p class="otherLink"><a href="#">Архив выставок в Узбекистане, Ташкент за 2018г</a></p>
-            <p class="otherLink"><a href="#">Архив выставок в Узбекистане, Ташкент за 2013г</a></p>
-            <p class="otherLink"><a href="#">Архив выставок в Узбекистане, Ташкент за 2012г</a></p>
-            <p class="otherLink"><a href="#">Архив выставок в Узбекистане, Ташкент за 2011г</a></p>
+        <!-- ==================== -->
+      <!-- === Main content starts here! === -->
+      <div class="mainMiniContainer mt-15">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Курс валют</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Архив</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Банкноты</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div class="column-td gap-16 mt-20">
+              <div class="column-td gap-16">
+                <p>* Курсы установлены без обязательств Центрального банка Республики Узбекистан покупать или продавать валюты по данному курсу</p>
+                <p>C 15 февраля 2021 г. ЦБ начал устанавливать курсы иностранных валют к суму для ведения бухгалтерского учета, статистической и иной отчетности, а также исчисления таможенных и других обязательных платежей каждый банковский рабочий день в 16.00 с расчетами на завтра.</p>
+                <p>Коммерческий курс (покупка-продажа доллара США и евро) приведен по данным Национального банка Республики Узбекистан (НБУ ВЭД РУз). Курс продажи и покупки в разных банках отличается друг от друга.</p>
+              </div>
+              <div class="column-td gap-16">
+                <p><a href="#" class="arrowLink">Покупка - продажа USD в обменниках коммерских банков</a></p>
+                <p><a href="#" class="arrowLink">Курс покупки-продажи российского рубля в обменниках коммерских банков Узбекистана</a></p>
+              </div>
+            </div>
+            <div class="column-td gap-16 mt-20">
+              <div class="column-td gap-16">
+                <div class="column-td gap-4">
+                  <h4>Выберать дату:</h4>
+                  <form class="date_changer_form">
+                    <input type="date" name="date" id="date_changer">
+                  </form>
+                </div>
+                <div class="overflow_scroll">
+                  <div class="wrapDiv">
+                    <a href="#" class="wrapLink active">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                    <a href="#" class="wrapLink">09 июн.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="column-td gap-12">
+                <h4>Курсы валют по ЦБ Республики Узбекистан 2022</h4>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                        <span class="accordion_btn_text">16.11.21 - 16.11.21</span>
+                        <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body kurs_valyut_accordion_body">
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 USD</p>
+                            <p class="key_mini">(Доллар США)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 RUB</p>
+                            <p class="key_mini">(Российский рубль)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 EUR</p>
+                            <p class="key_mini">(Евро)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 СHF</p>
+                            <p class="key_mini">(Швейцарский франк)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="column-td">
+                          <div class="cb_uzb_text">По НБ ВЭД РУз</div>
+                          <table class="kurs_table_grid">
+                            <tr>
+                              <td>
+                                <div>покупка</div>
+                                <div>продажа</div>
+                              </td>
+                              <td>
+                                <div>покупка</div>
+                                <div>продажа</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>1 USD</th>
+                              <th>1 EUR</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div>11 035</div>
+                                <div>11 035</div>
+                              </td>
+                              <td>
+                                <div>11 035</div>
+                                <div>11 035   </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        <span class="accordion_btn_text">28.07.19 - 28.07.19</span>
+                        <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                      <div class="accordion-body kurs_valyut_accordion_body">
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 USD</p>
+                            <p class="key_mini">(Доллар США)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 RUB</p>
+                            <p class="key_mini">(Российский рубль)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 EUR</p>
+                            <p class="key_mini">(Евро)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="rowFlex">
+                          <div class="keyDiv">
+                            <p class="key">1 СHF</p>
+                            <p class="key_mini">(Швейцарский франк)</p>
+                          </div>
+                          <div class="valueDiv">
+                            <p class="value">11 035 сум</p>
+                          </div>
+                        </div>
+                        <div class="column-td">
+                          <div class="cb_uzb_text">По НБ ВЭД РУз</div>
+                          <table class="kurs_table_grid">
+                            <tr>
+                              <td>
+                                <div>покупка</div>
+                                <div>продажа</div>
+                              </td>
+                              <td>
+                                <div>покупка</div>
+                                <div>продажа</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>1 USD</th>
+                              <th>1 EUR</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div>11 035</div>
+                                <div>11 035</div>
+                              </td>
+                              <td>
+                                <div>11 035</div>
+                                <div>11 035   </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-td gap-20 mt-20">
+              <div class="column-td gap-16">
+                <p>В данной таблице представлена информация об отношении курса узбекского сума - национальной валюты Республики Узбекистан, к основным иностранным валютам используемым в Узбекистане для ведения бухгалтерского учета, статистической и иной отчетности по валютным операциям, а также исчисления таможенных и других обязательных платежей*. Курс узбекского сума к доллару США, российскому рублю, евро и швейцарскому франку приведен по курсу ЦБ Республики Узбекистана.</p>
+                <p>Коммерческий курс (покупка-продажа доллара США и евро) приведен по данным Национального банка Республики Узбекистан (НБУ ВЭД РУз). Курс продажи и покупки в разных банках отличается друг от друга.</p>
+                <p><a href="#" class="arrowLink">Посмотреть курс покупки-продажи доллара США в разрезе других коммерских банков Узбекистана </a></p>
+                <p>C 15 февраля 2021 г. ЦБ начал устанавливать курсы иностранных валют к суму для ведения бухгалтерского учета, статистической и иной отчетности, а также исчисления таможенных и других обязательных платежей каждый банковский рабочий день в 16.00 с расчетами на завтра.</p>
+              </div>
+            </div>
+            <div class="column-td gap-16 mt-20">
+              <h5>Курс доллара США (USD), российского рубля (RUR), евро (EURO) и швейцарского франка (CHF) к узбекскому суму на сегодня - 16.06.2022 года и другие даты приведен по курсу ЦБ Республики Узбекистан.</h5>
+              <div class="column-td gap-16">
+                <p>Согласно Указа Президента Республики Узбекистан от 2 сентября 2017 года №УП-5177 «О первоочередных мерах по либерализации валютной политики», согласно которому одним из приоритетных направлений государственной экономической политики в области дальнейшей либерализации валютного рынка определены «исключительное использование рыночных механизмов при установлении курса национальной валюты по отношению к иностранной валюте» с 5 сентября 2017 установлен рыночный курс обмена валют на узбекский сум.</p>
+                <p>До 20 августа 2019 года ЦБ РУз устанавливал каждый понедельник курс доллара как среднее значение курсов, зафиксированных на торгах валютной биржи на предыдущей неделе, который применялся для целей бухгалтерского учета, статистической и иной отчетности по валютным операциям, а также для исчисления таможенных и других обязательных платежей на территории Республики Узбекистан.</p>
+                <p>После 20 августа ЦБ РУз не будет устанавливать цены (отменен ежедневный лимит в 0,5% на курсовые колебания) на продажу и покупку валюты, эта цена будет формироваться самостоятельно на рынке. Также с 20 августа коммерческим банкам разрешена продажа наличной иностранной валюты через обменные пункты с идентификацией клиента (т.е. предъявление паспорта клиента).</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="accordion mt-20" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                    <span class="accordion_btn_text">Курс валюты к суму в Узбекистане в 2021 году</span>
+                    <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body kurs_valyut_accordion_body">
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 USD</p>
+                        <p class="key_mini">(Доллар США)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 RUB</p>
+                        <p class="key_mini">(Российский рубль)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 EUR</p>
+                        <p class="key_mini">(Евро)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 СHF</p>
+                        <p class="key_mini">(Швейцарский франк)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="column-td">
+                      <div class="cb_uzb_text">По НБ ВЭД РУз</div>
+                      <table class="kurs_table_grid">
+                        <tr>
+                          <td>
+                            <div>покупка</div>
+                            <div>продажа</div>
+                          </td>
+                          <td>
+                            <div>покупка</div>
+                            <div>продажа</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>1 USD</th>
+                          <th>1 EUR</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div>11 035</div>
+                            <div>11 035</div>
+                          </td>
+                          <td>
+                            <div>11 035</div>
+                            <div>11 035   </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <span class="accordion_btn_text">Курс валюты к суму в Узбекистане в 2021 году</span>
+                    <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body kurs_valyut_accordion_body">
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 USD</p>
+                        <p class="key_mini">(Доллар США)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 RUB</p>
+                        <p class="key_mini">(Российский рубль)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 EUR</p>
+                        <p class="key_mini">(Евро)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <div class="keyDiv">
+                        <p class="key">1 СHF</p>
+                        <p class="key_mini">(Швейцарский франк)</p>
+                      </div>
+                      <div class="valueDiv">
+                        <p class="value">11 035 сум</p>
+                      </div>
+                    </div>
+                    <div class="column-td">
+                      <div class="cb_uzb_text">По НБ ВЭД РУз</div>
+                      <table class="kurs_table_grid">
+                        <tr>
+                          <td>
+                            <div>покупка</div>
+                            <div>продажа</div>
+                          </td>
+                          <td>
+                            <div>покупка</div>
+                            <div>продажа</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>1 USD</th>
+                          <th>1 EUR</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div>11 035</div>
+                            <div>11 035</div>
+                          </td>
+                          <td>
+                            <div>11 035</div>
+                            <div>11 035   </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-td gap-16 mt-20">
+              <p>В данной таблице представлена информация об отношении курса узбекского сума - национальной валюты Республики Узбекистан, к основным иностранным валютам используемым в Узбекистане для ведения бухгалтерского учета, статистической и иной отчетности по валютным операциям, а также исчисления таможенных и других обязательных платежей*. Курс узбекского сума к доллару США, российскому рублю, евро и швейцарскому франку приведен по курсу ЦБ Республики Узбекистана.</p>
+              <p>Коммерческий курс (покупка-продажа доллара США и евро) приведен по данным Национального банка Республики Узбекистан (НБУ ВЭД РУз). Курс продажи и покупки в разных банках отличается друг от друга.</p>
+              <p><a href="#" class="arrowLink">Посмотреть курс покупки-продажи доллара США в разрезе других коммерских банков Узбекистана</a></p>
+              <p>C 15 февраля 2021 г. ЦБ начал устанавливать курсы иностранных валют к суму для ведения бухгалтерского учета, статистической и иной отчетности, а также исчисления таможенных и других обязательных платежей каждый банковский рабочий день в 16.00 с расчетами на завтра.</p>
+            </div>
+            <div class="column-td gap-16 mt-20">
+              <h5>Курс доллара США (USD), российского рубля (RUR), евро (EURO) и швейцарского франка (CHF) к узбекскому суму на сегодня - 16.06.2022 года и другие даты приведен по курсу ЦБ Республики Узбекистан.</h5>
+              <div class="column-td gap-16">
+                <p>Согласно Указа Президента Республики Узбекистан от 2 сентября 2017 года №УП-5177 «О первоочередных мерах по либерализации валютной политики», согласно которому одним из приоритетных направлений государственной экономической политики в области дальнейшей либерализации валютного рынка определены «исключительное использование рыночных механизмов при установлении курса национальной валюты по отношению к иностранной валюте» с 5 сентября 2017 установлен рыночный курс обмена валют на узбекский сум.</p>
+                <p>До 20 августа 2019 года ЦБ РУз устанавливал каждый понедельник курс доллара как среднее значение курсов, зафиксированных на торгах валютной биржи на предыдущей неделе, который применялся для целей бухгалтерского учета, статистической и иной отчетности по валютным операциям, а также для исчисления таможенных и других обязательных платежей на территории Республики Узбекистан.</p>
+                <p>После 20 августа ЦБ РУз не будет устанавливать цены (отменен ежедневный лимит в 0,5% на курсовые колебания) на продажу и покупку валюты, эта цена будет формироваться самостоятельно на рынке. Также с 20 августа коммерческим банкам разрешена продажа наличной иностранной валюты через обменные пункты с идентификацией клиента (т.е. предъявление паспорта клиента).</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <div class="column-td gap-16 mt-20">
+              <h2>Валюта Узбекистана</h2>
+              <div class="column-td gap-16">
+                <div class="column-td">
+                  <p>Национальная валюта Узбекистана - сум (UZS, код 153), была введена в обращение 1 июля 1994 г.</p>
+                  <p>1 сум состоит из 100 тийинов.</p>
+                  <p>Существовали следующие виды банкнот - 1, 3, 5, 10, 25, 50, 100, 200, 500, 1 000, с 1 июля 2013 г - 5 000 сум, с 10 марта 2017г. - 10 000 сум, с 22 августа 2017г. - 50 000 сум с 22 февраля 2019 - 100 000 сум и с 14 июня 2021г - 2 000 сум и 20 000 сум. Банкноты номиналом меньше 1 000 сум выведены из оборота с 1 июля 2020 г..</p>
+                  <p>Со 2 июля 2018г в обращение выходят новые монеты 50 (пятьдесят), 100 (сто), 200 (двести), 500 (пятьсот) сумов.</p>
+                </div>
+                <div class="column-td">
+                  <p>Наряду с находящимися в обращении денежными знаками, выпускаемые в обращение монеты обязательны к приему по нарицательной стоимости во всех видах платежей всеми хозяйствующими субъектами и населением без ограничений.</p>
+                  <p>Находящиеся в обращение монеты 50 сумов образца 2001−2002 годов, монеты 100 сумов образца 2004 года и 2009 года, а также банкноты 50 и 100 сумов образца 1994 года будут приниматься ко всем видам платежей без ограничений до 1 июля 2019 года. Поступающие в кассы банков эти банкноты и монеты не допускаются к обратному выпуску в обращение.</p>
+                </div>
+                <div class="column-td">
+                  <p>Сум является единственным законным платежным средством на территории Республики Узбекистан (статья 122 Конституции Республики Узбекистан и статьей 11 Закона "Об основах Государственной независимости Республики Узбекистан" , а также постановлением Верховного Совета Республики Узбекистан от 3 сентября 1993 года № 952-XII).</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion mt-20" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                    <span class="accordion_btn_text">Купюра 50 000 сум (2021 г.)</span>
+                    <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body kurs_valyut_accordion_body">
+                    <div class="kupyura_div">
+                      <p class="mini_gray_text">Нажмите чтобы увеличить изображение банкноты (купюры)</p>
+                      <div title="k50" class="kupyura_img_div">
+                        <img src="/mobile/img/k50-front-mobile.png" alt="kupyura">
+                        <div class="search_btn">
+                          <svg class="searchSvg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3257 14.8992L21.7057 20.2792C21.8948 20.4685 22.001 20.7251 22.0009 20.9926C22.0008 21.2601 21.8945 21.5166 21.7052 21.7057C21.516 21.8948 21.2594 22.001 20.9919 22.0009C20.7244 22.0008 20.4678 21.8945 20.2787 21.7052L14.8987 16.3252C13.2905 17.5709 11.268 18.1571 9.24287 17.9646C7.21772 17.7721 5.34198 16.8153 3.99723 15.2888C2.65248 13.7624 1.93973 11.781 2.004 9.74778C2.06826 7.71451 2.9047 5.78209 4.34315 4.34364C5.7816 2.90518 7.71402 2.06875 9.74729 2.00448C11.7806 1.94022 13.7619 2.65296 15.2884 3.99771C16.8148 5.34246 17.7716 7.21821 17.9641 9.24336C18.1566 11.2685 17.5704 13.2909 16.3247 14.8992H16.3257ZM10.0007 16.0002C11.592 16.0002 13.1182 15.3681 14.2434 14.2429C15.3686 13.1177 16.0007 11.5915 16.0007 10.0002C16.0007 8.40893 15.3686 6.88281 14.2434 5.75759C13.1182 4.63237 11.592 4.00023 10.0007 4.00023C8.40944 4.00023 6.88332 4.63237 5.7581 5.75759C4.63289 6.88281 4.00074 8.40893 4.00074 10.0002C4.00074 11.5915 4.63289 13.1177 5.7581 14.2429C6.88332 15.3681 8.40944 16.0002 10.0007 16.0002Z" fill="currentColor"/>
+                          </svg>
+                        </div>
+                        <div class="kupyura_mask"></div>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Номинал (сум):</p>
+                      <p class="value gray">100 000</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Размеры (мм):</p>
+                      <p class="value gray">144*78</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Основные цвета:</p>
+                      <p class="value gray">светло-коричневый</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Год запуска в обращение:</p>
+                      <p class="value gray">22 февраля 2019</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Статус:</p>
+                      <p class="value green">в обращении</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <span class="accordion_btn_text">Купюра 100 000 сум (2021 г.)</span>
+                    <svg class="arrowDown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.00244 7.00598C1.00193 7.2139 1.04253 7.41987 1.1219 7.61205C1.20128 7.80422 1.31787 7.97881 1.46496 8.12576L10.8785 17.5368C11.1752 17.8334 11.5775 18 11.997 18C12.4166 18 12.8189 17.8334 13.1156 17.5368L22.4902 8.16228C22.6469 8.01782 22.7728 7.84319 22.8603 7.64887C22.9479 7.45455 22.9953 7.24455 22.9997 7.03146C23.0041 6.81838 22.9653 6.6066 22.8859 6.40885C22.8064 6.21109 22.6878 6.03142 22.5372 5.88064C22.3865 5.72985 22.207 5.61104 22.0093 5.53135C21.8117 5.45166 21.5999 5.41272 21.3868 5.41688C21.1737 5.42104 20.9637 5.4682 20.7693 5.55554C20.5749 5.64288 20.4001 5.76859 20.2555 5.92514L11.9983 14.1799L3.7021 5.88619C3.4808 5.66453 3.19869 5.51353 2.89151 5.45232C2.58433 5.39111 2.26589 5.42245 1.97653 5.54237C1.68718 5.66228 1.43992 5.86537 1.26608 6.12592C1.09224 6.38647 0.999635 6.69276 1 7.00598L1.00244 7.00598Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body kurs_valyut_accordion_body">
+                    <div class="kupyura_div">
+                      <p class="mini_gray_text">Нажмите чтобы увеличить изображение банкноты (купюры)</p>
+                      <div title="k100" class="kupyura_img_div">
+                        <img src="/mobile/img/k100-front-mobile.png" alt="kupyura">
+                        <div class="search_btn">
+                          <svg class="searchSvg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3257 14.8992L21.7057 20.2792C21.8948 20.4685 22.001 20.7251 22.0009 20.9926C22.0008 21.2601 21.8945 21.5166 21.7052 21.7057C21.516 21.8948 21.2594 22.001 20.9919 22.0009C20.7244 22.0008 20.4678 21.8945 20.2787 21.7052L14.8987 16.3252C13.2905 17.5709 11.268 18.1571 9.24287 17.9646C7.21772 17.7721 5.34198 16.8153 3.99723 15.2888C2.65248 13.7624 1.93973 11.781 2.004 9.74778C2.06826 7.71451 2.9047 5.78209 4.34315 4.34364C5.7816 2.90518 7.71402 2.06875 9.74729 2.00448C11.7806 1.94022 13.7619 2.65296 15.2884 3.99771C16.8148 5.34246 17.7716 7.21821 17.9641 9.24336C18.1566 11.2685 17.5704 13.2909 16.3247 14.8992H16.3257ZM10.0007 16.0002C11.592 16.0002 13.1182 15.3681 14.2434 14.2429C15.3686 13.1177 16.0007 11.5915 16.0007 10.0002C16.0007 8.40893 15.3686 6.88281 14.2434 5.75759C13.1182 4.63237 11.592 4.00023 10.0007 4.00023C8.40944 4.00023 6.88332 4.63237 5.7581 5.75759C4.63289 6.88281 4.00074 8.40893 4.00074 10.0002C4.00074 11.5915 4.63289 13.1177 5.7581 14.2429C6.88332 15.3681 8.40944 16.0002 10.0007 16.0002Z" fill="currentColor"/>
+                          </svg>
+                        </div>
+                        <div class="kupyura_mask"></div>
+                      </div>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Номинал (сум):</p>
+                      <p class="value gray">100 000</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Размеры (мм):</p>
+                      <p class="value gray">144*78</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Основные цвета:</p>
+                      <p class="value gray">светло-коричневый</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Год запуска в обращение:</p>
+                      <p class="value gray">22 февраля 2019</p>
+                    </div>
+                    <div class="rowFlex">
+                      <p class="key">Статус:</p>
+                      <p class="value green">в обращении</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -34,5 +547,6 @@
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="/mobile/js/kupyuraImgModal.js"></script>
 </body>
 </html>

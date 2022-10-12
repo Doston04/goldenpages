@@ -1,12 +1,7 @@
 const btn1 = document.querySelector("#btn1")
-const btn2 = document.querySelector("#btn2")
 const video1 = document.querySelector("#video1")
-const video2 = document.querySelector("#video2")
-video1.removeAttribute("controls")
-video2.removeAttribute("controls")
-
 const videoDiv1 = document.querySelector("#videoDiv1")
-const videoDiv2 = document.querySelector("#videoDiv2")
+video1.removeAttribute("controls")
 
 let clicked = false
 
@@ -25,6 +20,11 @@ const clickFunction1 = () => {
 }
 
 videoDiv1.addEventListener("click", clickFunction1)
+
+const videoDiv2 = document.querySelector("#videoDiv2")
+const video2 = document.querySelector("#video2")
+const btn2 = document.querySelector("#btn2")
+video2.removeAttribute("controls")
 
 let clicked2 = false
 

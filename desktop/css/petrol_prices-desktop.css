@@ -5,7 +5,7 @@ table {
 
 .petrol_price_table tr {
   display: grid;
-  grid-template-columns: 18% 16% 16% 16% 16% 18%;
+  grid-template-columns: 16% repeat(7, 12%);
 }
 
 .petrol_price_table tbody tr td:nth-child(5) {
