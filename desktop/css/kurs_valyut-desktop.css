@@ -166,31 +166,46 @@ h4 {
 
 .kurs_valyut_table thead tr:first-child {
   display: grid;
-  grid-template-columns: 60% 20% 20%;
+  grid-template-columns: 60% 40%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
 
-.kurs_valyut_table thead tr:first-child th:nth-child(2),
-.kurs_valyut_table thead tr:first-child th:nth-child(3) {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.kurs_valyut_table thead tr:first-child th:nth-child(2) {
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
-.kurs_valyut_table thead tr:first-child th:nth-child(2) div:last-child,
-.kurs_valyut_table thead tr:first-child th:nth-child(3) div:last-child {
-  border-left: 1px solid var(--border);
-}
-
-.kurs_valyut_table thead tr:first-child th:nth-child(2) div,
-.kurs_valyut_table thead tr:first-child th:nth-child(3) div {
+.kurs_valyut_table thead tr:first-child th:nth-child(2) div:first-child {
+  max-width: 100%;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.kurs_valyut_table thead tr:first-child th:nth-child(2) div:last-child {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.kurs_valyut_table thead tr:first-child th:nth-child(2) div:last-child div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kurs_valyut_table thead tr:first-child th:nth-child(2) div:last-child div:last-child {
+  border-left: 1px solid var(--border);
 }
 
 .kurs_valyut_table thead tr:last-child {
@@ -237,9 +252,26 @@ h4 {
 
 .kurs_valyut_table thead tr:last-child th:nth-child(2),
 .kurs_valyut_table thead tr:last-child th:nth-child(3) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+}
+
+.kurs_valyut_table thead tr:last-child th:nth-child(2) div,
+.kurs_valyut_table thead tr:last-child th:nth-child(3) div {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.kurs_valyut_table thead tr:last-child th:nth-child(2) div:last-child,
+.kurs_valyut_table thead tr:last-child th:nth-child(3) div:last-child {
+  border-left: 1px solid var(--border);
 }
 
 .kurs_valyut_table tbody tr {
