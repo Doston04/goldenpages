@@ -83,9 +83,52 @@ h3 {
   overflow: hidden;
 }
 
-.secondary_table tr {
+.secondary_table thead tr {
   display: grid;
   grid-template-columns: 8% 16% 20% 20% 20% 16%;
+}
+
+.secondary_table tbody tr {
+  display: grid;
+  grid-template-columns: 8% 92%;
+}
+
+.secondary_table tbody tr td:nth-child(2) {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary_table tbody tr td:nth-child(2) > div {
+  display: grid;
+  grid-template-columns: 17.4% 21.7% 21.7% 21.8% 17.5%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 54px;
+  border-top: 1px solid var(--border);
+}
+
+.secondary_table tbody tr td:nth-child(2) > div:nth-child(2n) {
+  background-color: var(--evenly-bg) !important;
+}
+
+.secondary_table tbody tr td:nth-child(2) > div:first-child {
+  border-top: 0;
+}
+
+.secondary_table tbody tr td:nth-child(2) > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  border-left: 1px solid var(--border);
+}
+
+.secondary_table tbody tr td:nth-child(2) > div > div:first-child {
+  border-left: none;
 }
 
 .wrapDiv {
@@ -136,6 +179,10 @@ h3 {
 .main_table thead tr th:nth-child(4) div:first-child {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
 }
 
 .main_table thead tr th:nth-child(2) div:last-child,
@@ -145,11 +192,16 @@ h3 {
   grid-template-columns: 50% 50%;
 }
 
-.main_table thead tr th:nth-child(2) div:nth-child(2),
-.main_table thead tr th:nth-child(3) div:nth-child(2),
-.main_table thead tr th:nth-child(4) div:nth-child(2) {
+.main_table thead tr th:nth-child(2) > div:nth-child(2),
+.main_table thead tr th:nth-child(3) > div:nth-child(2),
+.main_table thead tr th:nth-child(4) > div:nth-child(2) {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid var(--border);
+  padding: 8px;
 }
 
 .main_table thead tr th:nth-child(2) div:nth-child(2) span,
@@ -174,6 +226,18 @@ h3 {
   display: flex;
   flex-direction: column;
   background-color: #fff !important;
+  padding: 8px 0 !important;
+}
+
+.main_table thead tr th:nth-child(2) div:nth-child(3) div:nth-child(2),
+.main_table thead tr th:nth-child(3) div:nth-child(3) div:nth-child(2),
+.main_table thead tr th:nth-child(4) div:nth-child(3) div:nth-child(2) {
+  border-left: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main_table thead tr th:nth-child(2) div:nth-child(3) div div,
@@ -185,4 +249,54 @@ h3 {
   line-height: 21px;
 }
 
+.main_table tbody tr {
+  display: grid;
+  grid-template-columns: 19% repeat(3, 27%);
+}
+
+.main_table tbody tr td {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 !important;
+}
+
+.main_table tbody tr td:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px !important;
+}
+
+.main_table tbody tr td:first-child a:first-child {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.main_table tbody tr td > div:nth-child(2) {
+  border-left: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_table tbody tr td > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 1200px) {
+  .overflow_scroll, .mainContent {
+    overflow-x: scroll;
+  }
+  .main_table, .secondary_table {
+    min-width: 1200px;
+    overflow-x: scroll;
+  }
+}
 
